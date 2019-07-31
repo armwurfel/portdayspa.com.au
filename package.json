@@ -29,7 +29,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-lazyload": "^2.6.2",
-    "tailwindcss": "^1.0.5"
+    "tailwindcss": "^1.0.5",
+    "typeface-raleway": "0.0.75"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
