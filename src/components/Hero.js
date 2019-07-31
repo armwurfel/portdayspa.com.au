@@ -26,9 +26,9 @@ const Hero = () => {
   `);
   return (
     <div className="relative">
-      <div style={{ transform: `translateX(40%)` }}>
+      <div className="max-w-6xl ml-auto">
         <Image
-          style={{ minHeight: `30rem`, height: `100%`, maxHeight: `75vh` }}
+          style={{ minHeight: `30rem`, height: `100%` }}
           fluid={data.file.childImageSharp.fluid}
           loading="eager"
         />
