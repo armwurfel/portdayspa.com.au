@@ -13,14 +13,14 @@ const Map = () => {
     }
   `);
   return (
-    <LazyLoad height={512} once>
+    <LazyLoad height={256} once>
       <iframe
         src={data.site.siteMetadata.googleMapsEmbed}
         allowFullScreen
         className="w-full"
         frameBorder={0}
         title="map"
-        height={512}
+        height={256}
       />
     </LazyLoad>
   );
