@@ -1,25 +1,17 @@
 import React, { useState } from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import Logo from '../images/logo.svg';
+import Logo from './Logo';
 
 const Navbar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
-  const data = useStaticQuery(graphql`
-    query NavbarQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+
   return (
     <header className="bg-white md:flex items-center leading-none relative shadow sticky top-0 w-full z-50">
       <div className="flex justify-between w-full">
         <Link to="/" className="flex items-center p-4">
-          <img className="h-12" src={Logo} alt={data.site.siteMetadata.title} />
+          <Logo className="fill-current h-10" />
         </Link>
 
         <button

@@ -1,9 +1,20 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 
 const Logo = ({ className }) => {
+  const data = useStaticQuery(graphql`
+    query LogoQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
   return (
     <svg
+      aria-label={data.site.siteMetadata.title}
       className={className}
       clipRule="evenodd"
       fillRule="evenodd"
