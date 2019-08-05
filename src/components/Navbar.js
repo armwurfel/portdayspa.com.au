@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-white md:flex items-center leading-none relative shadow sticky top-0 w-full z-50">
+    <header className="bg-white md:flex items-center leading-none relative sticky top-0 w-full z-50">
       <div className="flex justify-between w-full">
         <Link to="/" className="flex items-center p-4">
           <Logo className="fill-current h-10" />
