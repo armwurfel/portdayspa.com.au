@@ -1,27 +1,67 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+import Image from 'gatsby-image';
 
-import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import Logo from '../components/Logo';
+import InstagramIcon from '../components/icons/Instagram';
+import FacebookIcon from '../components/icons/Facebook';
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <div className="flex flex-1 items-center justify-center mx-auto w-full">
-      <div className="max-w-sm p-4">
-        <h1 className="leading-none mb-2 pt-2 text-4xl">404: Page Not Found</h1>
-        <p>The page you were looking for doesn't seem to exist.</p>
-        <p className="mt-4">
-          <Link
-            className="bg-blue-700 hover:bg-blue-600 font-semibold inline-block leading-none px-4 py-2 text-white text-xs tracking-wide uppercase"
-            to="/"
-          >
-            Back to homepage
+const NotFoundPage = () => {
+  const data = useStaticQuery(graphql`
+    query NotFoundPageQuery {
+      file(relativePath: { eq: "marble.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 3000, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          facebook
+          instagram
+        }
+      }
+    }
+  `);
+
+  return (
+    <>
+      <SEO title="404: Not found" />
+      <div className="font-sans relative text-gray-700">
+        <Image className="h-screen" fluid={data.file.childImageSharp.fluid} />
+        <div className="absolute flex flex-col items-center justify-center inset-0">
+          <Link to="/">
+            <h1>
+              <Logo className="fill-current mx-auto h-32" />
+            </h1>
           </Link>
-        </p>
+          <h2 className="font-serif mt-2 text-6xl oldstyle-nums">404</h2>
+          <p>Sorry this page was not found.</p>
+          <p className="mt-12">
+            <Link
+              to="/"
+              className="border inline-block leading-none px-4 py-1 uppercase"
+            >
+              Home
+            </Link>
+          </p>
+          <p className="flex items-center mt-12">
+            <a href={data.site.siteMetadata.facebook}>
+              <FacebookIcon className="fill-current mr-2 hover:text-gray-600 w-6" />{' '}
+            </a>
+            <a href={data.site.siteMetadata.instagram}>
+              <InstagramIcon className="fill-current mr-2 hover:text-gray-600 w-6" />
+            </a>
+            <span className="flex-shrink-0 font-semibold uppercase">
+              Follow us on social media
+            </span>
+          </p>
+        </div>
       </div>
-    </div>
-  </Layout>
-);
+    </>
+  );
+};
 
 export default NotFoundPage;
