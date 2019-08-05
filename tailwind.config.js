@@ -17,6 +17,17 @@ module.exports = {
           'Segoe UI Symbol',
           'Noto Color Emoji',
         ],
+        serif: [
+          'Big Caslon',
+          'Libre Caslon',
+          'Book Antiqua',
+          'Palatino Linotype',
+          'Georgia',
+          'Cambria',
+          'Times New Roman',
+          'Times',
+          'serif',
+        ],
       },
       colors: {
         gray: {
