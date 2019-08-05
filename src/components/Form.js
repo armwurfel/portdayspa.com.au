@@ -34,113 +34,102 @@ export default class ContactForm extends React.Component {
 
   render() {
     return (
-      <form
-        action="/success/"
-        className="w-full"
-        data-netlify-honeypot="bot-field"
-        data-netlify="true"
-        method="post"
-        name="contact"
-        onSubmit={this.handleSubmit}
-      >
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input name="form-name" type="hidden" value="contact" />
-        <div hidden>
-          <label htmlFor="bot-field">
-            Don’t fill this out:{' '}
-            <input
-              id="bot-field"
-              name="bot-field"
-              onChange={this.handleChange}
-            />
-          </label>
-        </div>
+      <div className="border px-4 py-8 w-full">
+        <h2 className="font-serif leading-tight mb-4 text-2xl text-center uppercase">
+          Get in touch
+        </h2>
+        <form
+          action="/success/"
+          className="w-full"
+          data-netlify-honeypot="bot-field"
+          data-netlify="true"
+          method="post"
+          name="contact"
+          onSubmit={this.handleSubmit}
+        >
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input name="form-name" type="hidden" value="contact" />
+          <div hidden>
+            <label htmlFor="bot-field">
+              Don’t fill this out:{' '}
+              <input
+                id="bot-field"
+                name="bot-field"
+                onChange={this.handleChange}
+              />
+            </label>
+          </div>
 
-        {/* Name */}
-        <div className="mb-6">
-          <label className="flex flex-col" htmlFor="name">
-            <span className="font-bold mb-2 text-xs uppercase tracking-wide">
-              Name:
-            </span>
-            <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
-              id="name"
-              name="name"
-              onChange={this.handleChange}
-              required
-              type="text"
-            />
-          </label>
-        </div>
+          {/* Name */}
+          <div className="mb-6">
+            <label className="flex items-end" htmlFor="name">
+              <input
+                className="appearance-none bg-white border-b leading-tight px-3 pt-2 rounded-none text-gray-700 w-full focus:outline-none"
+                id="name"
+                name="name"
+                onChange={this.handleChange}
+                placeholder="Name:"
+                required
+                type="text"
+              />
+            </label>
+          </div>
 
-        {/* Email address */}
-        <div className="mb-6">
-          <label className="flex flex-col" htmlFor="email">
-            <span className="font-bold mb-2 text-xs uppercase tracking-wide">
-              Email address:
-            </span>
-            <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
-              id="email"
-              name="email"
-              onChange={this.handleChange}
-              required
-              type="email"
-            />
-          </label>
-        </div>
+          {/* Email address */}
+          <div className="mb-6">
+            <label className="flex items-end" htmlFor="email">
+              <input
+                className="appearance-none bg-white border-b leading-tight px-3 pt-2 rounded-none text-gray-700 w-full focus:outline-none"
+                id="email"
+                name="email"
+                onChange={this.handleChange}
+                placeholder="Email address:"
+                required
+                type="email"
+              />
+            </label>
+          </div>
 
-        {/* Phone number */}
-        <div className="mb-6">
-          <label className="flex flex-col" htmlFor="phone">
-            <span className="font-bold mb-2 text-xs uppercase tracking-wide">
-              Phone number:
-            </span>
-            <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
-              id="phone"
-              name="phone"
-              onChange={this.handleChange}
-              type="text"
-            />
-          </label>
-        </div>
+          {/* Phone number */}
+          <div className="mb-6">
+            <label className="flex items-end" htmlFor="phone">
+              <input
+                className="appearance-none bg-white border-b leading-tight px-3 pt-2 rounded-none text-gray-700 w-full focus:outline-none"
+                id="phone"
+                name="phone"
+                onChange={this.handleChange}
+                placeholder="Phone number:"
+                type="text"
+              />
+            </label>
+          </div>
 
-        {/* Message */}
-        <div className="mb-6">
-          <label className="flex flex-col" htmlFor="message">
-            <span className="font-bold mb-2 text-xs uppercase tracking-wide">
-              Message:
-            </span>
-            <textarea
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
-              id="message"
-              name="message"
-              onChange={this.handleChange}
-              required
-              rows={5}
-            />
-          </label>
-        </div>
+          {/* Message */}
+          <div className="mb-6">
+            <label className="flex items-end" htmlFor="message">
+              <textarea
+                className="appearance-none bg-white border-b leading-tight px-3 pt-2 rounded-none text-gray-700 w-full focus:outline-none"
+                id="message"
+                name="message"
+                placeholder="Message:"
+                onChange={this.handleChange}
+                required
+                rows={6}
+              />
+            </label>
+          </div>
 
-        <div className="flex items-center justify-between mb-6">
-          {/* Clear */}
-          <input
-            className="bg-red-100 hover:bg-red-700 cursor-pointer font-semibold leading-none mr-2 px-4 py-2 rounded-full text-red-700 hover:text-white text-xs tracking-wide uppercase"
-            onChange={this.handleChange}
-            type="reset"
-            value="Clear form"
-          />
-
-          {/* Submit */}
-          <button
-            className="bg-blue-700 hover:bg-blue-600 cursor-pointer font-semibold leading-none px-4 py-2 rounded-full text-white text-xs tracking-wide uppercase"
-            type="submit"
-          >
-            Send
-          </button>
-        </div>
-      </form>
+          <div className="flex items-end justify-end mb-6">
+            {/* Submit */}
+            <button
+              className="font-serif leading-tight text-2xl uppercase"
+              type="submit"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
     );
   }
 }
