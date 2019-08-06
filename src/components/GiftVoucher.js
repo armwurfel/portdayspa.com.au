@@ -34,43 +34,42 @@ const GiftVoucher = () => {
         fluid={data.hero.childImageSharp.fluid}
         loading="eager"
       />
-      <article
-        id="gift-voucher"
-        className="flex flex-wrap max-w-6xl mx-auto px-4 py-24 w-full"
-      >
-        <div className="w-full md:w-1/3">
-          <h2 className="font-serif leading-tight text-2xl uppercase">
-            Spoil someone <br />
-            with a gift <br />
-            voucher
-          </h2>
-          <p>
-            Give the most memorable gift of all allow us to wrap up tranquility
-            and provide your loved one with a beautifully presented gift
-            voucher.
-          </p>
-          <p>Purchasing your gift voucher has never been easier, you can</p>
-          <p>
-            Select from our extensive spa packages, create your own special
-            treatment from our spa menu or simply specify a dollar ($) amount
-            and let them choose.
-          </p>
-          <p>
-            <Link
-              to="/gift-voucher"
-              className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase"
-            >
-              Order a gift voucher
-            </Link>
-          </p>
-        </div>
-        <div className="md:pl-12 w-full md:w-2/3">
-          <Image
-            className="w-full"
-            style={{ transform: `rotate(-10deg)` }}
-            fluid={data.voucher.childImageSharp.fluid}
-            loading="eager"
-          />
+      <article id="gift-voucher" className="mx-auto px-4 md:px-6 py-24">
+        <div className="flex flex-wrap max-w-6xl w-full">
+          <div className="w-full md:w-1/3">
+            <h2 className="font-serif leading-tight text-2xl uppercase">
+              Spoil someone <br />
+              with a gift <br />
+              voucher
+            </h2>
+            <p>
+              Give the most memorable gift of all allow us to wrap up
+              tranquility and provide your loved one with a beautifully
+              presented gift voucher.
+            </p>
+            <p>Purchasing your gift voucher has never been easier, you can</p>
+            <p>
+              Select from our extensive spa packages, create your own special
+              treatment from our spa menu or simply specify a dollar ($) amount
+              and let them choose.
+            </p>
+            <p>
+              <Link
+                to="/gift-voucher"
+                className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase"
+              >
+                Order a gift voucher
+              </Link>
+            </p>
+          </div>
+          <div className="mt-8 md:mt-0 md:pl-12 w-full md:w-2/3">
+            <Image
+              className="w-full"
+              style={{ transform: `rotate(-10deg)` }}
+              fluid={data.voucher.childImageSharp.fluid}
+              loading="eager"
+            />
+          </div>
         </div>
       </article>
     </div>
