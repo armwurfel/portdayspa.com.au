@@ -3,8 +3,6 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
 
 import Logo from './Logo';
-import Instagram from './icons/Instagram';
-import Facebook from './icons/Facebook';
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
@@ -37,8 +35,8 @@ const Hero = () => {
           loading="eager"
         />
       </div>
-      <div className="absolute flex flex-col font-sans inset-0 p-4 text-gray-700">
-        <div className="leading-none uppercase -mx-3 text-sm">
+      <div className="absolute flex flex-col font-sans inset-0 px-16 py-8 text-gray-700">
+        <div className="hidden md:block leading-none uppercase -mx-3 text-sm">
           <Link className="inline-block mx-3" to="/">
             Home
           </Link>
@@ -66,18 +64,6 @@ const Hero = () => {
             Allow us to rejuvenate, <br />
             rehydrate and re-new
           </p>
-        </div>
-      </div>
-      <div className="absolute bottom-0 left-0 p-4">
-        <div>
-          <a href={data.site.siteMetadata.facebook}>
-            <Facebook className="fill-current text-gray-700 hover:text-gray-600 w-6" />
-          </a>
-        </div>
-        <div className="mt-2">
-          <a href={data.site.siteMetadata.instagram}>
-            <Instagram className="fill-current text-gray-700 hover:text-gray-600 w-6" />
-          </a>
         </div>
       </div>
     </div>
