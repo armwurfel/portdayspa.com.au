@@ -58,11 +58,14 @@ const Services = () => {
         <div className="mt-8 text-center w-full">
           <Link
             to="/services"
-            className="border inline-block mx-3 px-2 py-1 uppercase"
-          >
-            View more information here
-          </Link>
-        </div>
+          <div className="mt-8 text-center w-full">
+            <Link
+              to="/services"
+              className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase"
+            >
+              View more information here
+            </Link>
+          </div>
       </article>
     </div>
   );

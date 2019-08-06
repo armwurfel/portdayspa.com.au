@@ -52,7 +52,10 @@ const Hero = () => {
           <Link className="inline-block mx-3" to="/">
             Contact
           </Link>
-          <Link className="border inline-block mx-3 px-2 py-1" to="/">
+          <Link
+            className="border border-gray-500 inline-block mx-3 px-2 py-1"
+            to="/"
+          >
             Booking
           </Link>
         </div>

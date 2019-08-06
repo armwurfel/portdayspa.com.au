@@ -58,9 +58,9 @@ const GiftVoucher = () => {
           <p>
             <Link
               to="/gift-voucher"
-              className="border inline-block leading-none px-2 py-1 uppercase"
+              className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase"
             >
-              Click here to order a gift voucher
+              Order a gift voucher
             </Link>
           </p>
         </div>

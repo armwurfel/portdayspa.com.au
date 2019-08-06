@@ -36,24 +36,24 @@ const Why = () => {
           friendliness of our staff – they are always approachable and always
           professional. So if you are looking for a new spa or even if you
           haven’t visited us for a while NOW is the time for you to make Port
-          Macquarie Day Spa your choice, for the things that you find important.
-          Chances are we have you covered. We look forward to meeting you or
-          welcoming you back again soon.
-        </p>
-        <p>
-          <strong>Our Guarantee.</strong> You are completely protected by our
-          Guarantee that if you are not completely happy then we will gladly
-          redo the service.
-        </p>
-      </div>
-      <div className="mt-8 text-center w-full">
-        <Link
-          to="/contact"
-          className="border inline-block mx-3 px-2 py-1 uppercase"
-        >
-          Contact us today
-        </Link>
-      </div>
+            Macquarie Day Spa your choice, for the things that you find
+            important. Chances are we have you covered. We look forward to
+            meeting you or welcoming you back again soon.
+          </p>
+          <p>
+            <strong>Our Guarantee.</strong> You are completely protected by our
+            Guarantee that if you are not completely happy then we will gladly
+            redo the service.
+          </p>
+        </div>
+        <div className="mt-8 text-center w-full">
+          <Link
+            to="/contact"
+            className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase"
+          >
+            Contact us today
+          </Link>
+        </div>
     </article>
   );
 };
