@@ -27,37 +27,32 @@ const Services = () => {
         fluid={data.file.childImageSharp.fluid}
         loading="eager"
       />
-      <article
-        id="services"
-        className="flex flex-wrap max-w-6xl mx-auto px-4 py-24 w-full"
-      >
-        <div className="flex items-center justify-center w-full md:w-1/4">
-          <h2 className="font-serif leading-tight text-2xl uppercase">
-            {data.site.siteMetadata.title} Services
-          </h2>
-        </div>
-        <div className="md:col-3 w-full md:w-3/4">
-          <ul className="font-bold leading-loose">
-            <li>Skin Consulation</li>
-            <li>Signature Faicals</li>
-            <li>Skin Workouts</li>
-            <li>Skin Needling</li>
-            <li>Radiance Plus</li>
-            <li>Paramedical skin treatments</li>
-            <li>Simultaneously</li>
-            <li>Hydro-Brasion</li>
-            <li>Spa Packages</li>
-            <li>MassagesBody</li>
-            <li>Beauty</li>
-            <li>Lash Lift</li>
-            <li>Waxing &amp; Tinting</li>
-            <li>Makeup</li>
-            <li>IPL/SHR</li>
-          </ul>
-        </div>
-        <div className="mt-8 text-center w-full">
-          <Link
-            to="/services"
+      <article id="services" className="px-4 md:px-6 py-24">
+        <div className="flex flex-wrap max-w-6xl mx-auto w-full">
+          <div className="flex items-center justify-center w-full md:w-2/5">
+            <h2 className="font-serif leading-tight md:p-10 text-2xl uppercase w-full">
+              {data.site.siteMetadata.title} Services
+            </h2>
+          </div>
+          <div className="md:col-3 w-full md:w-3/5">
+            <ul className="font-bold leading-none pr-12">
+              <li className="mb-4">Skin Consulation</li>
+              <li className="mb-4">Signature Faicals</li>
+              <li className="mb-4">Skin Workouts</li>
+              <li className="mb-4">Skin Needling</li>
+              <li className="mb-4">Radiance Plus</li>
+              <li className="mb-4">Paramedical skin treatments</li>
+              <li className="mb-4">Simultaneously</li>
+              <li className="mb-4">Hydro-Brasion</li>
+              <li className="mb-4">Spa Packages</li>
+              <li className="mb-4">MassagesBody</li>
+              <li className="mb-4">Beauty</li>
+              <li className="mb-4">Lash Lift</li>
+              <li className="mb-4">Waxing &amp; Tinting</li>
+              <li className="mb-4">Makeup</li>
+              <li className="mb-4">IPL/SHR</li>
+            </ul>
+          </div>
           <div className="mt-8 text-center w-full">
             <Link
               to="/services"
@@ -66,6 +61,7 @@ const Services = () => {
               View more information here
             </Link>
           </div>
+        </div>
       </article>
     </div>
   );
