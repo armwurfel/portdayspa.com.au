@@ -27,8 +27,8 @@ const Services = () => {
         fluid={data.file.childImageSharp.fluid}
         loading="eager"
       />
-      <article id="services" className="px-4 md:px-6 py-24">
-        <div className="flex flex-wrap max-w-6xl mx-auto w-full">
+      <article id="services" className="px-4 md:px-6 py-24 mx-auto">
+        <div className="flex flex-wrap max-w-6xl w-full">
           <div className="flex items-center justify-center w-full md:w-2/5">
             <h2 className="font-serif leading-tight md:p-10 text-2xl uppercase w-full">
               {data.site.siteMetadata.title} Services
