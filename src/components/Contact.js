@@ -20,11 +20,12 @@ const Contact = () => {
       site {
         siteMetadata {
           address
+          email
+          facebook
+          googleMapsLink
+          instagram
           phone
           phoneFormatted
-          email
-          instagram
-          facebook
         }
       }
     }
@@ -47,7 +48,15 @@ const Contact = () => {
           </h2>
           <p>
             Fill out the form below or you can find us at{' '}
-            <strong>{data.site.siteMetadata.address}</strong>
+            <strong>
+              <a
+                href={data.site.siteMetadata.googleMapsLink}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {data.site.siteMetadata.address}
+              </a>
+            </strong>
           </p>
           <p>
             Phone us on{' '}
@@ -64,10 +73,18 @@ const Contact = () => {
             </strong>
           </p>
           <p className="flex items-center mb-auto">
-            <a href={data.site.siteMetadata.facebook}>
+            <a
+              href={data.site.siteMetadata.facebook}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <FacebookIcon className="fill-current mr-2 hover:text-gray-600 w-6" />{' '}
             </a>
-            <a href={data.site.siteMetadata.instagram}>
+            <a
+              href={data.site.siteMetadata.instagram}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <InstagramIcon className="fill-current mr-2 hover:text-gray-600 w-6" />
             </a>
             <span className="font-serif leading-none text-2xl uppercase">

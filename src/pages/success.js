@@ -55,10 +55,20 @@ const SuccessPage = () => {
             </Link>
           </p>
           <p className="flex flex-wrap items-center justify-center mt-12">
-            <a className="my-2" href={data.site.siteMetadata.facebook}>
+            <a
+              className="my-2"
+              href={data.site.siteMetadata.facebook}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <FacebookIcon className="fill-current mr-2 hover:text-gray-600 w-6" />{' '}
             </a>
-            <a className="my-2" href={data.site.siteMetadata.instagram}>
+            <a
+              className="my-2"
+              href={data.site.siteMetadata.instagram}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <InstagramIcon className="fill-current mr-2 hover:text-gray-600 w-6" />
             </a>
             <span className="flex-shrink-0 font-serif uppercase">

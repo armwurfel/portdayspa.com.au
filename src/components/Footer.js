@@ -67,7 +67,8 @@ const Footer = () => {
             <a
               className="font-semibold inline-flex px-1"
               href="https://phirannodesigns.com.au"
-              rel="nofollow"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               Phiranno Designs
             </a>
