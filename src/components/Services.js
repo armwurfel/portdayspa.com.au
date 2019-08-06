@@ -34,7 +34,7 @@ const Services = () => {
               {data.site.siteMetadata.title} Services
             </h2>
           </div>
-          <div className="md:col-3 w-full md:w-3/5">
+          <div className="md:col-3 mt-4 md:mt-0 w-full md:w-3/5">
             <ul className="font-bold leading-none pr-12">
               <li className="mb-4">Skin Consulation</li>
               <li className="mb-4">Signature Faicals</li>

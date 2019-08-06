@@ -21,7 +21,7 @@ const Why = () => {
           </h2>
         </div>
         <div className="md:col-2 w-full md:w-2/3">
-          <p>
+          <p className="mt-4 md:mt-0">
             <strong>Professional Advice &amp; Products.</strong> With our
             qualified therapists you will be guaranteed to receive the best
             possible advice for all your beauty and skin needs. Our spa staff
