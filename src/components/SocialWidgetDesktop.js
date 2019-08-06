@@ -23,7 +23,7 @@ const SocialWidgetDesktop = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <Facebook className="bg-white fill-current pointer-events-auto rounded-full text-gray-700 hover:text-gray-600 w-6" />
+          <Facebook className="bg-white fill-current pointer-events-auto rounded-full text-gray-700 hover:text-gray-600 text-2xl" />
         </a>
       </div>
       <div className="mt-2">
@@ -32,7 +32,7 @@ const SocialWidgetDesktop = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <Instagram className="bg-white fill-current pointer-events-auto rounded-full text-gray-700 hover:text-gray-600 w-6" />
+          <Instagram className="bg-white fill-current pointer-events-auto rounded-full text-gray-700 hover:text-gray-600 text-2xl" />
         </a>
       </div>
     </div>
