@@ -30,7 +30,7 @@ const GiftVoucher = () => {
     <div className="flex flex-wrap">
       <Image
         className="w-full"
-        style={{ minHeight: `30rem`, height: `100%` }}
+        style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
         fluid={data.hero.childImageSharp.fluid}
         loading="eager"
       />

@@ -23,7 +23,7 @@ const Services = () => {
     <div className="flex flex-wrap">
       <Image
         className="w-full"
-        style={{ minHeight: `30rem`, height: `100%` }}
+        style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
         fluid={data.file.childImageSharp.fluid}
         loading="eager"
       />

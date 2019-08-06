@@ -34,7 +34,7 @@ const Contact = () => {
     <div className="flex flex-wrap">
       <Image
         className="w-full"
-        style={{ minHeight: `30rem`, height: `100%` }}
+        style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
         fluid={data.hero.childImageSharp.fluid}
         loading="eager"
       />
@@ -72,20 +72,22 @@ const Contact = () => {
               </a>
             </strong>
           </p>
-          <p className="flex items-center mb-auto">
+          <p className="flex flex-wrap items-center mb-auto">
             <a
+              className="py-2"
               href={data.site.siteMetadata.facebook}
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FacebookIcon className="fill-current mr-2 hover:text-gray-600 w-6" />{' '}
+              <FacebookIcon className="fill-current mr-2 hover:text-gray-600 text-2xl" />{' '}
             </a>
             <a
+              className="py-2"
               href={data.site.siteMetadata.instagram}
               rel="noopener noreferrer"
               target="_blank"
             >
-              <InstagramIcon className="fill-current mr-2 hover:text-gray-600 w-6" />
+              <InstagramIcon className="fill-current mr-2 hover:text-gray-600 text-2xl" />
             </a>
             <span className="font-serif leading-none text-2xl uppercase">
               Follow us on social&nbsp;media
