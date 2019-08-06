@@ -32,18 +32,20 @@ const SuccessPage = () => {
       <div className="font-sans relative text-gray-700">
         <Image className="h-screen" fluid={data.file.childImageSharp.fluid} />
         <div className="absolute flex flex-col items-center justify-center inset-0">
-          <Link to="/">
+          <Link className="max-w-md px-8 w-full" to="/">
             <h1>
-              <Logo className="fill-current mx-auto h-32" />
+              <Logo className="fill-current w-full" />
             </h1>
           </Link>
-          <h2 className="font-serif leading-none mt-12 text-3xl oldstyle-nums uppercase">
-            Form submitted successfully!
-          </h2>
-          <p>
-            Thank you for your message. We will get back to you as soon as we
-            can.
-          </p>
+          <div className="text-center">
+            <h2 className="font-serif leading-none mt-12 text-xl sm:text-3xl oldstyle-nums uppercase">
+              Form submitted successfully!
+            </h2>
+            <p className="mt-2">
+              Thank you for your message. We will get back to you as soon as we
+              can.
+            </p>
+          </div>
           <p className="mt-12">
             <Link
               to="/"
@@ -52,14 +54,14 @@ const SuccessPage = () => {
               Home
             </Link>
           </p>
-          <p className="flex items-center mt-12">
-            <a href={data.site.siteMetadata.facebook}>
+          <p className="flex flex-wrap items-center justify-center mt-12">
+            <a className="my-2" href={data.site.siteMetadata.facebook}>
               <FacebookIcon className="fill-current mr-2 hover:text-gray-600 w-6" />{' '}
             </a>
-            <a href={data.site.siteMetadata.instagram}>
+            <a className="my-2" href={data.site.siteMetadata.instagram}>
               <InstagramIcon className="fill-current mr-2 hover:text-gray-600 w-6" />
             </a>
-            <span className="flex-shrink-0 font-semibold font-serif uppercase">
+            <span className="flex-shrink-0 font-serif uppercase">
               Follow us on social media
             </span>
           </p>
