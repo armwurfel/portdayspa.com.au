@@ -29,6 +29,7 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
     "react-lazyload": "^2.6.2",
     "react-media": "^1.9.2",
     "tailwindcss": "^1.0.6",
@@ -55,8 +56,9 @@
   "scripts": {
     "build": "gatsby build",
     "build:serve": "gatsby build && gatsby serve",
+    "clean": "gatsby clean",
     "develop": "gatsby develop --open",
-    "lint:fix": "gatsby clean && eslint . --fix",
+    "lint:fix": "eslint . --fix",
     "serve": "gatsby serve --open",
     "start": "npm run develop"
   }
