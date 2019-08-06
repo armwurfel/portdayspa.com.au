@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 const Instagram = ({ className }) => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 128 128"
       className={className}
+      height="1em"
+      viewBox="0 0 128 128"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <g fillRule="evenodd" clipRule="evenodd">
         <circle cx={64} cy={64} r="13.3" />
