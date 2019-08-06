@@ -29,32 +29,41 @@ const Footer = () => {
   `);
 
   return (
-    <footer className="relative w-full">
+    <footer className="mb-12 md:mb-0 relative w-full">
       <div className="absolute inset-0 overflow-hidden">
         <Image className="h-full" fluid={data.file.childImageSharp.fluid} />
       </div>
       <div className="mx-auto relative">
         <div className="flex flex-wrap justify-center items-center max-w-6xl mx-auto p-4 w-full">
           <Link to="/" className="w-full md:w-1/2">
-            <Logo className="fill-current h-32" />
+            <Logo className="fill-current max-w-xs mx-auto w-full" />
           </Link>
           <div className="uppercase w-full md:w-1/2">
             <p>
-              <a href={`tel:${data.site.siteMetadata.phoneFormatted}`}>
-                Phone: {data.site.siteMetadata.phoneFormatted}
+              <strong>Phone: </strong>
+              <a href={`tel:${data.site.siteMetadata.phone}`}>
+                {data.site.siteMetadata.phoneFormatted}
               </a>
             </p>
-            <p>
+            <p className="mt-0">
+              <strong>Address: </strong>
               <a
                 href={data.site.siteMetadata.googleMapsLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Address: {data.site.siteMetadata.address}
+                {data.site.siteMetadata.address}
               </a>
             </p>
-            <p>Email: {data.site.siteMetadata.email}</p>
-            <p>ABN: {data.site.siteMetadata.abn}</p>
+            <p className="mt-0">
+              <strong>Email: </strong>
+              <a href={`mailto:${data.site.siteMetadata.email}`}>
+                {data.site.siteMetadata.email}
+              </a>
+            </p>
+            <p className="mt-0">
+              <strong>ABN:</strong> {data.site.siteMetadata.abn}
+            </p>
           </div>
         </div>
         <div className="flex flex-wrap items-center justify-center mb-0 p-4 text-center w-full">
