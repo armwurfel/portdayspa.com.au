@@ -1,4 +1,5 @@
 import React from 'react';
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
 
@@ -20,15 +21,26 @@ const Services = () => {
     }
   `);
   return (
-    <div className="flex flex-wrap">
-      <Image
-        className="w-full"
-        style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
-        fluid={data.file.childImageSharp.fluid}
-        loading="eager"
-      />
-      <article id="services" className="px-4 md:px-6 py-24 mx-auto">
-        <div className="flex flex-wrap max-w-6xl w-full">
+    <ParallaxProvider>
+      <Parallax y={[-50, 50]}>
+        <div className="overflow-hidden">
+          <Image
+            style={{
+              minHeight: `30rem`,
+              height: `100%`,
+              maxHeight: `50rem`,
+              width: `100%`,
+            }}
+            fluid={data.file.childImageSharp.fluid}
+            loading="eager"
+          />
+        </div>
+      </Parallax>
+      <article
+        id="services"
+        className="bg-white px-4 md:px-6 py-24 relative w-full z-10"
+      >
+        <div className="flex flex-wrap max-w-6xl  mx-auto w-full">
           <div className="flex items-center justify-center w-full md:w-2/5">
             <h2 className="font-serif leading-tight md:p-10 text-2xl uppercase w-full">
               {data.site.siteMetadata.title} Services
@@ -63,7 +75,7 @@ const Services = () => {
           </div>
         </div>
       </article>
-    </div>
+    </ParallaxProvider>
   );
 };
 

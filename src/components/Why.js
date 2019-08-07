@@ -12,8 +12,11 @@ const Why = () => {
     }
   `);
   return (
-    <article id="why" className="mx-auto px-4 md:px-6 py-24">
-      <div className="flex flex-wrap max-w-6xl w-full">
+    <article
+      id="why"
+      className="bg-white px-4 md:px-6 py-24 relative w-full z-10"
+    >
+      <div className="flex flex-wrap max-w-6xl mx-auto w-full">
         <div className="flex items-center justify-center w-full md:w-1/3">
           <h2 className="font-semibold font-serif leading-tight md:p-10 text-2xl uppercase w-full">
             Why Choose <br />
