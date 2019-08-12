@@ -2,6 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import HeroNav from '../components/HeroNav';
 import Hero from '../components/Hero';
 import Why from '../components/Why';
 import Services from '../components/Services';
@@ -12,6 +13,7 @@ import Map from '../components/Map';
 const IndexPage = () => (
   <>
     <SEO title="Home" />
+    <HeroNav />
     <Hero />
     <Layout>
       <Why />
