@@ -1,36 +1,14 @@
 import React from 'react';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
-import { graphql, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
+import PropTypes from 'prop-types';
 
 import FacebookIcon from './icons/Facebook';
 import InstagramIcon from './icons/Instagram';
 import InstagramWidget from './Instagram';
 import Form from './Form';
 
-const Contact = () => {
-  const data = useStaticQuery(graphql`
-    query ContactQuery {
-      hero: file(relativePath: { eq: "contact.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 3000, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      site {
-        siteMetadata {
-          address
-          email
-          facebook
-          googleMapsLink
-          instagram
-          phone
-          phoneFormatted
-        }
-      }
-    }
-  `);
+const Contact = ({ data }) => {
   return (
     <ParallaxProvider>
       <div className="overflow-hidden">
@@ -105,6 +83,10 @@ const Contact = () => {
       </div>
     </ParallaxProvider>
   );
+};
+
+Contact.propTypes = {
+  data: PropTypes.object,
 };
 
 export default Contact;
