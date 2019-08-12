@@ -7,21 +7,21 @@ const HeroNav = () => {
       <Link className="inline-block mx-3" to="/">
         Home
       </Link>
-      <Link className="inline-block mx-3" to="/">
+      <Link className="inline-block mx-3" to="/why">
         Why
       </Link>
-      <Link className="inline-block mx-3" to="/">
+      <Link className="inline-block mx-3" to="/services">
         Services
       </Link>
-      <Link className="inline-block mx-3" to="/">
+      <Link className="inline-block mx-3" to="/gift-voucher">
         Gift Voucher
       </Link>
-      <Link className="inline-block mx-3" to="/">
+      <Link className="inline-block mx-3" to="/contact">
         Contact
       </Link>
       <Link
         className="border border-gray-500 inline-block mx-3 px-2 py-1"
-        to="/"
+        to="/booking"
       >
         Booking
       </Link>
