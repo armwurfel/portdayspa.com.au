@@ -7,7 +7,7 @@ import SEO from '../components/SEO';
 import HeroNav from '../components/HeroNav';
 import Hero from '../components/Hero';
 import Why from '../components/Why';
-import Services from '../components/Services';
+import ServicesSection from '../components/ServicesSection';
 import GiftVoucher from '../components/GiftVoucher';
 import Contact from '../components/Contact';
 import Map from '../components/Map';
@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
     <Hero />
     <Layout>
       <Why />
-      <Services />
+      <ServicesSection />
       <GiftVoucher />
       <Contact data={data} />
       <Map />
