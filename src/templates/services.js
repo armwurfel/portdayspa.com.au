@@ -32,11 +32,11 @@ const Services = ({ pageContext }) => {
   return (
     <Layout>
       <SEO title={pageContext.title} />
-      <div className="relative">
+      <div className="max-w-6xl mx-auto relative w-full">
         <div className="absolute">
           <img className="h-full translate-left-50" src={Background} alt="" />
         </div>
-        <div className="flex flex-wrap py-4 relative">
+        <div className="flex flex-wrap py-12 relative">
           <ServicesMenu />
           <div className="flex px-12 w-full md:w-2/3">
             <div className="border px-4 py-6 w-full">
