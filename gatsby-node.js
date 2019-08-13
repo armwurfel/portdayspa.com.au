@@ -4,4 +4,45 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
+exports.createPages = async ({ actions: { createPage }, graphql }) => {
+  const results = await graphql(`
+    {
+      allServicesJson {
+        edges {
+          node {
+            slug
+            title
+          }
+        }
+      }
+    }
+  `);
+
+  if (results.error) {
+    console.error('Something went wrong!');
+    return;
+  }
+
+  // Create pages for each service
+  results.data.allServicesJson.edges.forEach(edge => {
+    const service = edge.node;
+
+    createPage({
+      path: `/services/${service.slug}`,
+      component: require.resolve('./src/templates/services.js'),
+      context: {
+        slug: service.slug,
+        title: service.title,
+      },
+    });
+
+    createPage({
+      path: `/services`,
+      component: require.resolve('./src/templates/services.js'),
+      context: {
+        slug: 'skin',
+        title: service.title,
+      },
+    });
+  });
+};
