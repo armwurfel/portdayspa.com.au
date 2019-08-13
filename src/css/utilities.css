@@ -12,3 +12,14 @@
 .oldstyle-nums {
   font-variant-numeric: oldstyle-nums;
 }
+
+.list-dash > li {
+  @apply relative;
+  @apply pl-4;
+}
+
+.list-dash > li::before {
+  content: '–';
+  @apply left-0;
+  @apply absolute;
+}
