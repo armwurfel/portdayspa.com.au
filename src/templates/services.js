@@ -37,7 +37,7 @@ const Services = ({ pageContext }) => {
         </div>
         <div className="flex flex-wrap py-4 relative">
           <ServicesMenu />
-          <div className="flex px-12 w-2/3">
+          <div className="flex px-12 w-full md:w-2/3">
             <div className="border px-4 py-6 w-full">
               <SelectedService />
               <p className="text-center">
