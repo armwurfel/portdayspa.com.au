@@ -17,7 +17,7 @@ const Map = () => {
       <iframe
         src={data.site.siteMetadata.googleMapsEmbed}
         allowFullScreen
-        className="w-full"
+        className="mt-auto w-full"
         frameBorder={0}
         title="map"
         height={256}
