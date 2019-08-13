@@ -9,6 +9,7 @@ import Skin from '../components/Services/Skin';
 import Body from '../components/Services/Body';
 import Beauty from '../components/Services/Beauty';
 import IPLSRH from '../components/Services/IPL-SRH';
+import Map from '../components/Map';
 import Background from '../images/background.svg';
 
 const Services = ({ pageContext }) => {
@@ -52,6 +53,7 @@ const Services = ({ pageContext }) => {
           </div>
         </div>
       </div>
+      <Map />
     </Layout>
   );
 };
