@@ -2,9 +2,14 @@ import React from 'react';
 
 const Beauty = () => {
   return (
-    <div>
-      <h1>Beauty</h1>
-    </div>
+    <>
+      <div>
+        <div className="flex font-serif justify-between leading-tight uppercase">
+          <h2>Beauty</h2>
+          <div>Price</div>
+        </div>
+      </div>
+    </>
   );
 };
 
