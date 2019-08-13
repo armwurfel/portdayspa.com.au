@@ -1,6 +1,9 @@
 /* Utility classes */
 
 @responsive {
+  .translate-left-50 {
+    transform: translateX(-50%);
+  }
   .col-2 {
     columns: 2;
   }
