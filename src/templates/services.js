@@ -40,7 +40,7 @@ const Services = ({ pageContext }) => {
           <div className="flex px-12 w-full md:w-2/3">
             <div className="border px-4 py-6 w-full">
               <SelectedService />
-              <p className="text-center">
+              <p className="mt-6 text-center">
                 <Link
                   className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase"
                   to="/booking"
