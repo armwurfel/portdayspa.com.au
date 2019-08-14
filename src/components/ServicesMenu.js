@@ -20,22 +20,19 @@ const ServicesMenu = () => {
           <li className="mt-2">
             <Link
               to="/services/skin"
-              className="bg-white border border-gray-500 inline-block leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800"
+              className={`${
+                window.location.pathname === '/services' ? 'underline' : null
+              } bg-white border border-gray-500 flex items-center justify-between leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800`}
               activeClassName="underline"
-              partiallyActive
             >
-              <div className="flex justify-between">
-                <span>Skin</span>
-                <span>></span>
-              </div>
+              Skin
             </Link>
           </li>
           <li className="mt-2">
             <Link
               to="/services/body"
-              className="bg-white border border-gray-500 inline-block leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800"
+              className="bg-white border border-gray-500 flex items-center justify-between leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800"
               activeClassName="underline"
-              partiallyActive
             >
               Body
             </Link>
@@ -43,9 +40,8 @@ const ServicesMenu = () => {
           <li className="mt-2">
             <Link
               to="/services/beauty"
-              className="bg-white border border-gray-500 inline-block leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800"
+              className="bg-white border border-gray-500 flex items-center justify-between leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800"
               activeClassName="underline"
-              partiallyActive
             >
               Beauty
             </Link>
@@ -53,9 +49,8 @@ const ServicesMenu = () => {
           <li className="mt-2">
             <Link
               to="/services/ipl-srh"
-              className="bg-white border border-gray-500 inline-block leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800"
+              className="bg-white border border-gray-500 flex items-center justify-between leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800"
               activeClassName="underline"
-              partiallyActive
             >
               IPL/SRH
             </Link>
