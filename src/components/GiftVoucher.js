@@ -44,7 +44,7 @@ const GiftVoucher = () => {
         >
           <div className="flex flex-wrap max-w-6xl mx-auto w-full">
             <div className="w-full md:w-1/3">
-              <h2 className="font-serif leading-tight text-2xl uppercase">
+              <h2 className="font-semibold font-serif leading-tight text-2xl uppercase">
                 Spoil someone <br />
                 with a gift <br />
                 voucher

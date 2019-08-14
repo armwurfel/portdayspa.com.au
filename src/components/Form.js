@@ -35,7 +35,7 @@ export default class ContactForm extends React.Component {
   render() {
     return (
       <div className="border flex flex-col justify-center px-4 py-8 w-full">
-        <h2 className="font-serif leading-tight mb-6 text-2xl text-center uppercase">
+        <h2 className="font-semibold font-serif leading-tight mb-6 text-2xl text-center uppercase">
           Get in touch
         </h2>
         <form

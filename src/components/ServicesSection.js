@@ -42,7 +42,7 @@ const ServicesSection = () => {
       >
         <div className="flex flex-wrap max-w-6xl  mx-auto w-full">
           <div className="flex items-center justify-center w-full md:w-2/5">
-            <h2 className="font-serif leading-tight md:p-10 text-2xl uppercase w-full">
+            <h2 className="font-semibold font-serif leading-tight md:p-10 text-2xl uppercase w-full">
               {data.site.siteMetadata.title} Services
             </h2>
           </div>
