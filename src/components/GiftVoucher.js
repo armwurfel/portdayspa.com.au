@@ -49,25 +49,29 @@ const GiftVoucher = () => {
                 with a gift <br />
                 voucher
               </h2>
-              <p>
-                Give the most memorable gift of all allow us to wrap up
-                tranquility and provide your loved one with a beautifully
-                presented gift voucher.
-              </p>
-              <p>Purchasing your gift voucher has never been easier, you can</p>
-              <p>
-                Select from our extensive spa packages, create your own special
-                treatment from our spa menu or simply specify a dollar ($)
-                amount and let them choose.
-              </p>
-              <p>
-                <Link
-                  to="/gift-voucher"
-                  className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase"
-                >
-                  Order a gift voucher
-                </Link>
-              </p>
+              <div className="mt-4">
+                <p>
+                  Give the most memorable gift of all allow us to wrap up
+                  tranquility and provide your loved one with a beautifully
+                  presented gift voucher.
+                </p>
+                <p>
+                  Purchasing your gift voucher has never been easier, you can
+                </p>
+                <p>
+                  Select from our extensive spa packages, create your own
+                  special treatment from our spa menu or simply specify a dollar
+                  ($) amount and let them choose.
+                </p>
+                <p>
+                  <Link
+                    to="/gift-voucher"
+                    className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase"
+                  >
+                    Order a gift voucher
+                  </Link>
+                </p>
+              </div>
             </div>
             <div className="mt-8 md:mt-0 md:pl-12 w-full md:w-2/3">
               <Image
