@@ -15,6 +15,14 @@ module.exports = {
     title: `Port Macquarie Day Spa`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-json`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
@@ -65,13 +73,5 @@ module.exports = {
         username: `portmacquariedayspa`,
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-json`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-postcss`,
-    `gatsby-plugin-netlify`,
   ],
 };
