@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
 const ServicesMenu = () => {
+  const [isActive, toggleActive] = useState(false);
+
+  useEffect(() => {
+    if (window.location.pathname === '/services') {
+      toggleActive(true);
+    }
+  }, []);
+
   const data = useStaticQuery(graphql`
     query ServicesTemplateQuery {
       site {
@@ -21,9 +29,7 @@ const ServicesMenu = () => {
             <Link
               to="/services/skin"
               className={`${
-                window.location.pathname === '/services'
-                  ? 'bg-gray-800 text-white border-gray-800'
-                  : null
+                isActive ? 'bg-gray-800 text-white border-gray-800' : null
               } bg-white border border-gray-500 flex items-center justify-between leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800`}
               activeClassName="bg-gray-800 text-white border-gray-800"
             >
