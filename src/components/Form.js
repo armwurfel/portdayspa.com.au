@@ -122,7 +122,7 @@ export default class ContactForm extends React.Component {
           <div className="flex justify-center mb-6">
             {/* Submit */}
             <button
-              className="border border-gray-500 inline-block leading-none px-4 py-1 uppercase"
+              className="border border-gray-500 inline-block leading-none px-4 py-1 uppercase transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800"
               type="submit"
             >
               Send

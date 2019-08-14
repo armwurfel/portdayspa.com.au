@@ -42,10 +42,10 @@ const Navbar = () => {
           <NavLink link="/gift-voucher" title="Gift Voucher" />
           <NavLink link="/contact" title="Contact" />
           <Link
-            className="block border-t md:border-none font-light p-4 hover:text-gray-800 text-sm tracking-wide uppercase"
+            className="block border-t md:border-none font-light p-4 text-sm tracking-wide uppercase"
             to="/booking"
           >
-            <span className="border border-gray-500 inline-block px-2 py-1">
+            <span className="border border-gray-500 inline-block px-2 py-1 transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800">
               Booking
             </span>
           </Link>

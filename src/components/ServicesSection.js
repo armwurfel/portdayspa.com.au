@@ -68,7 +68,7 @@ const ServicesSection = () => {
           <div className="mt-8 text-center w-full">
             <Link
               to="/services"
-              className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase"
+              className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800"
             >
               View more information here
             </Link>

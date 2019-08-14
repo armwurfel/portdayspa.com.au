@@ -20,7 +20,7 @@ const HeroNav = () => {
         Contact
       </Link>
       <Link
-        className="border border-gray-500 inline-block mx-3 px-2 py-1"
+        className="border border-gray-500 inline-block mx-3 px-2 py-1 transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800"
         to="/booking"
       >
         Booking

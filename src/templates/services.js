@@ -43,7 +43,7 @@ const Services = ({ pageContext }) => {
               <SelectedService />
               <p className="mt-6 text-center">
                 <Link
-                  className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase"
+                  className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800"
                   to="/booking"
                 >
                   Book now
