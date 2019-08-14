@@ -25,8 +25,8 @@ const Skin = () => {
       <h3 className="font-bold mt-6 uppercase">Signature Facials</h3>
       <Service title="Multi – Detox" price="$179 (90 mins)">
         Revitalise, clarify, cleanse. The high potency multi-clay mask, with
-        kaolin & bentonite, is formulated to promote cell renewal, detoxify and
-        calm normal, combination and oily skin types. The blend of active
+        kaolin &amp; bentonite, is formulated to promote cell renewal, detoxify
+        and calm normal, combination and oily skin types. The blend of active
         ingredients will ensure your skin reclaims a healthy glow.
       </Service>
       <Service title="Age Delay" price="$170 (90 mins)">
@@ -47,10 +47,10 @@ const Skin = () => {
         smooth microdermabrasion tip. Great for rosacea or inflammatory skins.
       </Service>
       <Service title="Bio Hydra" price="$149 (45 mins)">
-        A treatment to stimulate the production of collagen & elastin, restore
-        moisture loss and provide clarity to the skin. This gorgeous facial
-        contains a unique formula of plant extracts and hydraluronic acid to
-        bind and lock in moisture.
+        A treatment to stimulate the production of collagen &amp; elastin,
+        restore moisture loss and provide clarity to the skin. This gorgeous
+        facial contains a unique formula of plant extracts and hydraluronic acid
+        to bind and lock in moisture.
       </Service>
       <Service title="PDS Customised Signature Facial" price="$49 (45 mins)">
         This relaxing facial is customised to your skins individual
