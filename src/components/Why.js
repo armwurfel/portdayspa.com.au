@@ -25,6 +25,13 @@ const Why = () => {
         </div>
         <div className="md:col-2 w-full md:w-2/3">
           <p className="mt-4 md:mt-0">
+            <strong>Where relaxation and results meet.</strong> Escape reality
+            and restore inner peace in our tranquil environment. Our treatment
+            rooms are beautifully presented with heated beds, tranquil lighting
+            and soothing sounds. Indulge with a loved one or friend in our
+            double treatment room also containing a relaxation spa.
+          </p>
+          <p>
             <strong>Professional Advice &amp; Products.</strong> With our
             qualified therapists you will be guaranteed to receive the best
             possible advice for all your beauty and skin needs. Our spa staff
@@ -40,11 +47,6 @@ const Why = () => {
             Macquarie Day Spa your choice, for the things that you find
             important. Chances are we have you covered. We look forward to
             meeting you or welcoming you back again soon.
-          </p>
-          <p>
-            <strong>Our Guarantee.</strong> You are completely protected by our
-            Guarantee that if you are not completely happy then we will gladly
-            redo the service.
           </p>
         </div>
         <div className="mt-8 text-center w-full">
