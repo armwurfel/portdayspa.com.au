@@ -46,23 +46,21 @@ const ServicesSection = () => {
               {data.site.siteMetadata.title} Services
             </h2>
           </div>
-          <div className="md:col-3 mt-4 md:mt-0 w-full md:w-3/5">
+          <div className="md:col-3 w-full md:w-3/5">
             <ul className="font-bold leading-none pr-12">
-              <li className="mb-4">Skin Consulation</li>
-              <li className="mb-4">Signature Faicals</li>
-              <li className="mb-4">Skin Workouts</li>
-              <li className="mb-4">Skin Needling</li>
-              <li className="mb-4">Radiance Plus</li>
-              <li className="mb-4">Paramedical skin treatments</li>
-              <li className="mb-4">Simultaneously</li>
-              <li className="mb-4">Hydro-Brasion</li>
-              <li className="mb-4">Spa Packages</li>
-              <li className="mb-4">MassagesBody</li>
-              <li className="mb-4">Beauty</li>
-              <li className="mb-4">Lash Lift</li>
-              <li className="mb-4">Waxing &amp; Tinting</li>
-              <li className="mb-4">Makeup</li>
-              <li className="mb-4">IPL/SHR</li>
+              <li className="mt-4 md:mt-0">Skin Consultations</li>
+              <li className="mt-4">Signature Facials</li>
+              <li className="mt-4">Skin Workouts</li>
+              <li className="mt-4">Skin Needling</li>
+              <li className="mt-4">Paramedical Skin Treatments</li>
+              <li className="mt-4">Microdermabrasion</li>
+              <li className="mt-4">IPL/ SHR</li>
+              <li className="mt-4">Spa Packages</li>
+              <li className="mt-4">Massage</li>
+              <li className="mt-4">Waxing &amp; Tinting</li>
+              <li className="mt-4">Lash Lifting</li>
+              <li className="mt-4">Makeup</li>
+              <li className="mt-4">Manicures &amp; Pedicures</li>
             </ul>
           </div>
           <div className="mt-8 text-center w-full">
