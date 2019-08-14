@@ -21,9 +21,11 @@ const ServicesMenu = () => {
             <Link
               to="/services/skin"
               className={`${
-                window.location.pathname === '/services' ? 'underline' : null
+                window.location.pathname === '/services'
+                  ? 'bg-gray-800 text-white border-gray-800'
+                  : null
               } bg-white border border-gray-500 flex items-center justify-between leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800`}
-              activeClassName="underline"
+              activeClassName="bg-gray-800 text-white border-gray-800"
             >
               Skin
             </Link>
@@ -32,7 +34,7 @@ const ServicesMenu = () => {
             <Link
               to="/services/body"
               className="bg-white border border-gray-500 flex items-center justify-between leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800"
-              activeClassName="underline"
+              activeClassName="bg-gray-800 text-white border-gray-800"
             >
               Body
             </Link>
@@ -41,7 +43,7 @@ const ServicesMenu = () => {
             <Link
               to="/services/beauty"
               className="bg-white border border-gray-500 flex items-center justify-between leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800"
-              activeClassName="underline"
+              activeClassName="bg-gray-800 text-white border-gray-800"
             >
               Beauty
             </Link>
@@ -50,7 +52,7 @@ const ServicesMenu = () => {
             <Link
               to="/services/ipl-srh"
               className="bg-white border border-gray-500 flex items-center justify-between leading-none px-2 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white hover:border-gray-800"
-              activeClassName="underline"
+              activeClassName="bg-gray-800 text-white border-gray-800"
             >
               IPL/SRH
             </Link>
