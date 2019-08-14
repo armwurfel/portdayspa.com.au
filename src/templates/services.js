@@ -59,7 +59,7 @@ const Services = ({ pageContext }) => {
 };
 
 Services.propTypes = {
-  pageContext: PropTypes.array,
+  pageContext: PropTypes.object,
 };
 
 export default Services;

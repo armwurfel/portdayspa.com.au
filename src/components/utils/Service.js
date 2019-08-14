@@ -17,7 +17,7 @@ const Service = ({ title, children, price }) => {
 
 Service.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.array,
+  children: PropTypes.any,
   price: PropTypes.any,
 };
 
