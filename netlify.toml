@@ -1,5 +1,0 @@
-[[redirects]]
-from = "/services"
-to = "/services/skin"
-status = 301
-force = false
