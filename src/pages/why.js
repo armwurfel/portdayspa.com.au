@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
-import { ParallaxProvider, withController } from 'react-scroll-parallax';
+import { withController } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 
 import Layout from '../components/Layout';
@@ -17,13 +17,11 @@ const WhyPage = ({ data, parallaxController }) => {
   }, [parallaxController]);
 
   return (
-    <ParallaxProvider>
-      <Layout>
-        <Why />
-        <Contact data={data} />
-        <Map />
-      </Layout>
-    </ParallaxProvider>
+    <Layout>
+      <Why />
+      <Contact data={data} />
+      <Map />
+    </Layout>
   );
 };
 
