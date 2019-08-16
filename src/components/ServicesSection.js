@@ -1,5 +1,5 @@
 import React from 'react';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
 
@@ -21,7 +21,7 @@ const ServicesSection = () => {
     }
   `);
   return (
-    <ParallaxProvider>
+    <>
       <Parallax y={[-50, 50]}>
         <div className="overflow-hidden">
           <Image
@@ -73,7 +73,7 @@ const ServicesSection = () => {
           </div>
         </div>
       </article>
-    </ParallaxProvider>
+    </>
   );
 };
 

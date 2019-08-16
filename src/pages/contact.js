@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { ParallaxProvider, withController } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 
 import Layout from '../components/Layout';
@@ -8,10 +9,12 @@ import Map from '../components/Map';
 
 const ContactPage = ({ data }) => {
   return (
-    <Layout>
-      <Contact data={data} />
-      <Map />
-    </Layout>
+    <ParallaxProvider>
+      <Layout>
+        <Contact data={data} />
+        <Map />
+      </Layout>
+    </ParallaxProvider>
   );
 };
 
