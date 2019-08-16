@@ -3,8 +3,19 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
+require('./src/css/tailwind.css');
+require('typeface-raleway');
 
-import './src/css/tailwind.css';
+const React = require('react');
+// const propTypes = require('prop-types');
+const { ParallaxProvider } = require('react-scroll-parallax');
 
 // Self host fonts using Typefaces.js https://github.com/KyleAMathews/typefaces
-require('typeface-raleway');
+
+exports.wrapRootElement = (apiCallbackContext, pluginOptions) => {
+  const { element } = apiCallbackContext;
+
+  return <ParallaxProvider>{element}</ParallaxProvider>;
+};
+
+exports.wrapRootElement.displayName = 'wrapRootElement';
