@@ -15,12 +15,6 @@ import Contact from '../components/Contact';
 import Map from '../components/Map';
 
 const IndexPage = ({ location, data }) => {
-  // useEffect(() => {
-  //   window.addEventListener('load', event => {
-  //     parallaxController.update();
-  //   });
-  // }, [parallaxController]);
-  //return JSON.stringify(location)
   return (
     <ParalaxUpdate location={location}>
       <SEO title="Home" />
