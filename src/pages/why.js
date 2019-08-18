@@ -23,6 +23,7 @@ const WhyPage = ({ data, parallaxController }) => {
 
 WhyPage.propTypes = {
   data: PropTypes.object,
+  parallaxController: PropTypes.object,
 };
 
 export default withController(WhyPage);

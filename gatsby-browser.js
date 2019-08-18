@@ -6,16 +6,21 @@
 require('./src/css/tailwind.css');
 require('typeface-raleway');
 
-const React = require('react');
-// const propTypes = require('prop-types');
-const { ParallaxProvider } = require('react-scroll-parallax');
+// Load CSS from Tailwind
+import './src/css/tailwind.css';
 
 // Self host fonts using Typefaces.js https://github.com/KyleAMathews/typefaces
+import 'typeface-raleway';
 
-exports.wrapRootElement = (apiCallbackContext, pluginOptions) => {
-  const { element } = apiCallbackContext;
+// Wrap root element in ParallaxProvider
+import React from 'react';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import PropTypes from 'prop-types';
 
+export const wrapRootElement = ({ element }) => {
   return <ParallaxProvider>{element}</ParallaxProvider>;
 };
 
-exports.wrapRootElement.displayName = 'wrapRootElement';
+wrapRootElement.propTypes = {
+  element: PropTypes.object,
+};
