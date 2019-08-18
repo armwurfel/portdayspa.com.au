@@ -1,28 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
-import { ParallaxProvider, withController } from 'react-scroll-parallax';
+import { withController } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 
 import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import Map from '../components/Map';
 
-const ContactPage = ({ data }) => {
+const ContactPage = ({ data, parallaxController }) => {
+  useEffect(() => {
+    parallaxController.update();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <ParallaxProvider>
+    <>
       <Layout>
         <Contact data={data} />
         <Map />
       </Layout>
-    </ParallaxProvider>
+    </>
   );
 };
 
 ContactPage.propTypes = {
   data: PropTypes.object,
+  parallaxController: PropTypes.object,
 };
 
-export default ContactPage;
+export default withController(ContactPage);
 
 export const query = graphql`
   query ContactPageQuery {
