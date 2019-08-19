@@ -30,7 +30,10 @@ const SuccessPage = () => {
     <>
       <SEO title="Success" />
       <div className="font-sans relative text-gray-700">
-        <Image className="h-screen" fluid={data.file.childImageSharp.fluid} />
+        <Image
+          className="h-screen opacity-75"
+          fluid={data.file.childImageSharp.fluid}
+        />
         <div className="absolute flex flex-col items-center justify-center inset-0">
           <Link className="max-w-md px-8 w-full" to="/">
             <h1>
@@ -49,7 +52,7 @@ const SuccessPage = () => {
           <p className="mt-12">
             <Link
               to="/"
-              className="border inline-block leading-none px-4 py-1 uppercase"
+              className="border inline-block leading-none px-4 py-1 transition-all uppercase hover:bg-gray-800 hover:border-gray-800 hover:text-white"
             >
               Home
             </Link>
@@ -61,7 +64,7 @@ const SuccessPage = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FacebookIcon className="fill-current mr-2 hover:text-gray-600 w-6" />{' '}
+              <FacebookIcon className="fill-current h-6 mr-2 hover:text-gray-600 w-6" />{' '}
             </a>
             <a
               className="my-2"
@@ -69,7 +72,7 @@ const SuccessPage = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <InstagramIcon className="fill-current mr-2 hover:text-gray-600 w-6" />
+              <InstagramIcon className="fill-current h-6 mr-2 hover:text-gray-600 w-6" />
             </a>
             <span className="flex-shrink-0 font-serif uppercase">
               Follow us on social media
