@@ -31,7 +31,10 @@ const Footer = () => {
   return (
     <footer className="mb-12 md:mb-0 relative w-full">
       <div className="absolute inset-0 overflow-hidden">
-        <Image className="h-full" fluid={data.file.childImageSharp.fluid} />
+        <Image
+          className="h-full opacity-75"
+          fluid={data.file.childImageSharp.fluid}
+        />
       </div>
       <div className="mx-auto relative">
         <div className="flex flex-wrap justify-center items-center max-w-6xl mx-auto p-4 w-full">
