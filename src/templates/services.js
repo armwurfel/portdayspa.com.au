@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import ServicesMenu from '../components/ServicesMenu';
 import Skin from '../components/Services/Skin';
 import Body from '../components/Services/Body';
 import Beauty from '../components/Services/Beauty';
@@ -37,11 +36,10 @@ const Services = ({ pageContext }) => {
           <img className="translate-left-50" src={Background} alt="" />
         </div>
         <div className="flex flex-wrap py-12 relative">
-          <ServicesMenu />
-          <div className="flex px-12 w-full md:w-2/3">
-            <div className="bg-white border px-4 py-6 w-full">
+          <div className="flex flex-wrap ml-auto px-12 w-full md:w-2/3">
+            <div className="bg-white border w-full">
               <SelectedService />
-              <p className="mt-6 text-center">
+              <p className="my-6 text-center">
                 <Link
                   className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800"
                   to="/booking"
