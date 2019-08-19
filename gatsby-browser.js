@@ -3,6 +3,8 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
+require('./src/css/tailwind.css');
+require('typeface-raleway');
 
 // Load CSS from Tailwind
 import './src/css/tailwind.css';
