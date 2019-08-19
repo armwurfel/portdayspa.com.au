@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import { withController } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 
-import ParalaxUpdate from '../components/ParalaxUpdate';
+import ParallaxUpdate from '../components/ParallaxUpdate';
 import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import Map from '../components/Map';
@@ -15,12 +15,12 @@ const ContactPage = ({ data, parallaxController }) => {
   }, []);
 
   return (
-    <ParalaxUpdate>
+    <ParallaxUpdate>
       <Layout>
         <Contact data={data} />
         <Map />
       </Layout>
-    </ParalaxUpdate>
+    </ParallaxUpdate>
   );
 };
 

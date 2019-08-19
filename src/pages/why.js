@@ -1,29 +1,28 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import { withController } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 
-import ParalaxUpdate from '../components/ParalaxUpdate';
+import ParallaxUpdate from '../components/ParallaxUpdate';
 import Layout from '../components/Layout';
 import Why from '../components/Why';
 import Contact from '../components/Contact';
 import Map from '../components/Map';
 
-const WhyPage = ({ data, parallaxController }) => {
+const WhyPage = ({ data }) => {
   return (
-    <ParalaxUpdate>
+    <ParallaxUpdate>
       <Layout>
         <Why />
         <Contact data={data} />
         <Map />
       </Layout>
-    </ParalaxUpdate>
+    </ParallaxUpdate>
   );
 };
 
 WhyPage.propTypes = {
   data: PropTypes.object,
-  parallaxController: PropTypes.object,
 };
 
 export default withController(WhyPage);

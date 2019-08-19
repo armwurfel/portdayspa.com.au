@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
-import { withController } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 
-import ParalaxUpdate from '../components/ParalaxUpdate';
+import ParallaxUpdate from '../components/ParallaxUpdate';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import HeroNav from '../components/HeroNav';
@@ -14,9 +13,9 @@ import GiftVoucher from '../components/GiftVoucher';
 import Contact from '../components/Contact';
 import Map from '../components/Map';
 
-const IndexPage = ({ location, data }) => {
+const IndexPage = ({ data }) => {
   return (
-    <ParalaxUpdate location={location}>
+    <ParallaxUpdate>
       <SEO title="Home" />
       <HeroNav />
       <Hero />
@@ -27,13 +26,12 @@ const IndexPage = ({ location, data }) => {
         <Contact data={data} />
         <Map />
       </Layout>
-    </ParalaxUpdate>
+    </ParallaxUpdate>
   );
 };
 
 IndexPage.propTypes = {
   data: PropTypes.object,
-  location: PropTypes.object,
 };
 
 export default IndexPage;
