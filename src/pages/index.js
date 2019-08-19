@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
+import { withController } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 
 import ParallaxUpdate from '../components/ParallaxUpdate';
@@ -13,7 +14,12 @@ import GiftVoucher from '../components/GiftVoucher';
 import Contact from '../components/Contact';
 import Map from '../components/Map';
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, parallaxController }) => {
+  useEffect(() => {
+    parallaxController.update();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <ParallaxUpdate>
       <SEO title="Home" />
@@ -32,9 +38,10 @@ const IndexPage = ({ data }) => {
 
 IndexPage.propTypes = {
   data: PropTypes.object,
+  parallaxController: PropTypes.object,
 };
 
-export default IndexPage;
+export default withController(IndexPage);
 
 export const query = graphql`
   query IndexPageQuery {

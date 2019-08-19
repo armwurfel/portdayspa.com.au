@@ -13,7 +13,6 @@ const ContactPage = ({ data, parallaxController }) => {
     parallaxController.update();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
   return (
     <ParallaxUpdate>
       <Layout>
