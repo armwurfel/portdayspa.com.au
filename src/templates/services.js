@@ -32,11 +32,11 @@ const Services = ({ pageContext }) => {
     <Layout>
       <SEO title={pageContext.title} />
       <div className="max-w-6xl mx-auto relative w-full">
-        <div className="absolute inset-0">
+        <div className="absolute hidden md:block inset-0">
           <img className="translate-left-50" src={Background} alt="" />
         </div>
         <div className="flex flex-wrap py-12 relative">
-          <div className="flex flex-wrap ml-auto px-12 w-full md:w-2/3">
+          <div className="flex flex-wrap ml-auto px-4 md:px-12 w-full md:w-2/3">
             <div className="bg-white border w-full">
               <SelectedService />
               <p className="my-6 text-center">
