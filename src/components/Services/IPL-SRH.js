@@ -1,13 +1,21 @@
 import React from 'react';
 
+import Service from '../utils/Service';
+import ServicesMenu from '../ServicesMenu';
+
 const IPLSRH = () => {
   return (
     <>
-      <div>
-        <div className="flex font-serif justify-between leading-tight uppercase">
-          <h2>IPL/SRH</h2>
-          <div>Price</div>
-        </div>
+      <ServicesMenu service="IPL/SRH" />
+      <div className="px-4">
+        <Service title="Skin Consultation*" price={[<p>$50*</p>]}>
+          Our comprehensive Consultation process is designed to help you create
+          a customised treatment and homecare plan, allowing you to address your
+          skin concerns and reveal your best ever skin.
+          <p className="mt-0">
+            <small>*This cost is redeemable on products/treatments</small>
+          </p>
+        </Service>
       </div>
     </>
   );
