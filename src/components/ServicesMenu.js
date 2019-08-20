@@ -18,7 +18,7 @@ const ServicesMenu = ({ service }) => {
         <h1 className="font-serif text-4xl">{service}</h1>
         <button
           onClick={() => toggleIsOpen(!isOpen)}
-          className="border border-gray-500 font-light font-sans inline-block px-2 py-1 text-sm transition-all uppercase hover:bg-gray-800 hover:text-white focus:outline-none focus:bg-gray-800 focus:border-gray-800 focus:text-white"
+          className="border border-gray-500 font-light font-sans inline-block px-2 py-1 text-sm transition-all uppercase hover:bg-gray-800 hover:border-gray-800 hover:text-white focus:outline-none focus:bg-gray-800 focus:border-gray-800 focus:text-white"
           type="button"
         >
           Menu
