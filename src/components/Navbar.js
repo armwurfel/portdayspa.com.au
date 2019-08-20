@@ -41,14 +41,16 @@ const Navbar = () => {
           <NavLink link="/services" title="Services" />
           <NavLink link="/gift-voucher" title="Gift Voucher" />
           <NavLink link="/contact" title="Contact" />
-          <Link
+          <a
             className="block border-t md:border-none font-light p-4 text-sm tracking-wide uppercase"
-            to="/booking"
+            href="https://phorest.com/book/salons/portmacquariedayspa"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             <span className="border border-gray-500 inline-block px-2 py-1 transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800">
               Booking
             </span>
-          </Link>
+          </a>
         </nav>
       </div>
     </header>
