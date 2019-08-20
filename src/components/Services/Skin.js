@@ -17,7 +17,7 @@ const Skin = () => {
           skin concerns including premature skin ageing, pigmentation/uneven
           skin tone, dehydration and congested skin.
         </p>
-        <Service title="Vita-CLEAR Facial" price="$150" time="60mins">
+        <Service title="Vita-CLEAR Facial" price="$150*" time="60mins">
           <p>
             This deep cleansing treatment incorporated BHA and potent
             antioxidants to penetrate deep into the pores to clear congestion.
@@ -28,7 +28,7 @@ const Skin = () => {
             <small>*45min - $115, 30min - $80</small>
           </p>
         </Service>
-        <Service title="Vita-REPAIR Facial" price="$150" time="60mins">
+        <Service title="Vita-REPAIR Facial" price="$150*" time="60mins">
           <p>
             Works to repair stressed and dehydrated skin, this essential
             moisture boost treatment balances and restores skin's natural
@@ -40,7 +40,7 @@ const Skin = () => {
             <small>*45min - $115, 30min - $80</small>
           </p>
         </Service>
-        <Service title="Vita-GLOW Facial" price="$150" time="60mins">
+        <Service title="Vita-GLOW Facial" price="$150*" time="60mins">
           <p>
             This multi-action facial visibly reduces the appearance of
             pigmentation, uneven skin tone and dark spots. A powerful
@@ -69,7 +69,7 @@ const Skin = () => {
           been developed to quickly refresh and restore skins youthful
           appearance.
         </p>
-        <Service title="Vita-CLEAR Skin Workout" price="$95" time="30mins">
+        <Service title="Vita-CLEAR Skin Workout" price="$95*" time="30mins">
           <p>
             This Mandelic Acid Peel utilises AHAs to quickly decongest, clarify
             and help control oil production. With proven anti-ageing ingredient
@@ -80,7 +80,7 @@ const Skin = () => {
             <small>*45min + Infusion $130</small>
           </p>
         </Service>
-        <Service title="Vita-REPAIR Skin Workout" price="$90" time="30mins">
+        <Service title="Vita-REPAIR Skin Workout" price="$90*" time="30mins">
           <p>
             Reveal refreshed, youthful, radiant skin in just one treatment. This
             high-powered Lactic Acid peel delivers fast results and actively
@@ -91,7 +91,7 @@ const Skin = () => {
             <small>*45min + Infusion $125</small>
           </p>
         </Service>
-        <Service title="Vita-GLOW Skin Workout" price="$100" time="30mins">
+        <Service title="Vita-GLOW Skin Workout" price="$100*" time="30mins">
           <p>
             Ideal treatment for ageing or sun damaged skin, this potent Vitapeel
             features high-strength AHAs &amp; BHA. This skin brightening
@@ -103,7 +103,7 @@ const Skin = () => {
             <small>*45min + Infusion $125</small>
           </p>
         </Service>
-        <Service title="A-Zyme Skin Workout" price="$165" time="30mins">
+        <Service title="A-Zyme Skin Workout" price="$165*" time="30mins">
           <p>
             The powerhouse of all anti-ageing treatments. This fast-acting non
             invasive skin rejuevenation treatment combines proven anti-ageing
