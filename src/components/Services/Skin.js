@@ -127,7 +127,7 @@ const Skin = () => {
           </p>
         </Service>
         <h3 className="font-bold mt-6 uppercase">
-          Ultraceuticals Paramedical treatments
+          Ultraceuticals Paramedical Treatments
         </h3>
         <p>
           Performed by highly trained clinicians these treatments provide
@@ -148,7 +148,7 @@ const Skin = () => {
             ingredients to help smooth, plump and boost skin’s hydration levels.
           </p>
         </Service>
-        <Service title="Radiance Plus+" price="$120" time="30mins">
+        <Service title="Skin Needling (Face)" price="$349">
           <p>
             This radiance-boosting mask combines a powerful blend of 8 skin
             brightening agents to rapidly reduce the appearance of
@@ -156,12 +156,50 @@ const Skin = () => {
             luminous complexion.
           </p>
         </Service>
-        <Service title="Skin Needling (Face)" price="$349">
+        <h3 className="font-bold mt-6 uppercase">Skinstitut Treatments</h3>
+        <Service title="Multi Active Power Boost" price="$95" time="45mins">
           <p>
-            This radiance-boosting mask combines a powerful blend of 8 skin
-            brightening agents to rapidly reduce the appearance of
-            hyperpigmentation, dark spots and blotchiness to instantly reveal
-            luminous complexion.
+            Recharge and revitalise sluggish, environmentally stressed,
+            dehydrated or ageing skin with Skinstitut’s ‘Multi Active Power
+            Boost.’ Suitable for all skin types, the deep cleansing actions of
+            lactic acid, combined with a power exfoliation, steam and squeeze
+            (if required), followed by a pressure point massage, will boost
+            skin’s natural radiance, and internal wellbeing.
+          </p>
+        </Service>
+        <Service title="Medi Express" price="$76" time="30mins">
+          <p>
+            An express maintenance treatment that provides increased cellular
+            turnover and intense hydration for an instantly radiant and firmer
+            looking skin.
+          </p>
+        </Service>
+        <Service title="Ageless Peel" price="$149" time="45mins">
+          <p>
+            A cosmedical grade peel to target visible signs of aging and sun
+            damage. Works on a dermal level to encourage a revitalised, smoother
+            and more even complexion.
+          </p>
+        </Service>
+        <Service title="Peel Accelerator" price="$99" time="30mins">
+          <p>
+            Chirally correct vitamin and acid peel to renew, brighten and smooth
+            the skin.
+          </p>
+        </Service>
+        <Service title="Enzymatic AHA Peel" price="$79" time="30mins">
+          <p>
+            A gentle micro exfoliating treatment designed to soothe, hydrate and
+            micro exfoliate dry, flaking and sensitised skins.
+          </p>
+        </Service>
+        <h3 className="font-bold mt-6 uppercase">Organic Spa Treatments</h3>
+        <Service title="Bio - Hydra" price="$149" time="45mins">
+          <p>
+            A treatment to stimulate the production of collagen & elastin,
+            restore moisture loss and provide clarity to the skin. This gorgeous
+            facial contains a unique formula of plant extracts and Hyaluronic
+            acid to bind and lock in moisture.
           </p>
         </Service>
       </div>
