@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Service from '../utils/Service';
 import ServicesMenu from '../ServicesMenu';
 
 const Beauty = () => {
