@@ -1,5 +1,4 @@
 import React from 'react';
-import { Parallax } from 'react-scroll-parallax';
 import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
 
@@ -11,14 +10,12 @@ import Form from './Form';
 const Contact = ({ data }) => {
   return (
     <div className="overflow-hidden">
-      <Parallax y={[-50, 50]}>
-        <Image
-          className="w-full"
-          style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
-          fluid={data.hero.childImageSharp.fluid}
-          loading="eager"
-        />
-      </Parallax>
+      <Image
+        className="w-full"
+        style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
+        fluid={data.hero.childImageSharp.fluid}
+        loading="eager"
+      />
       <article id="contact" className="bg-white px-4 py-24 relative w-full">
         <div className="flex flex-wrap max-w-6xl mx-auto">
           <div className="flex flex-1 flex-col px-4 w-full md:w-1/2">
