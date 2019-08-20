@@ -3,10 +3,10 @@ import React from 'react';
 import Service from '../utils/Service';
 import ServicesMenu from '../ServicesMenu';
 
-const IPLSRH = () => {
+const IPLSHR = () => {
   return (
     <>
-      <ServicesMenu service="IPL/SRH" />
+      <ServicesMenu service="IPL/SHR" />
       <div className="px-4">
         <Service title="Skin Consultation*" price={[<p>$50*</p>]}>
           Our comprehensive Consultation process is designed to help you create
@@ -21,4 +21,4 @@ const IPLSRH = () => {
   );
 };
 
-export default IPLSRH;
+export default IPLSHR;

@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 import Skin from '../components/Services/Skin';
 import Body from '../components/Services/Body';
 import Beauty from '../components/Services/Beauty';
-import IPLSRH from '../components/Services/IPL-SRH';
+import IPLSHR from '../components/Services/IPL-SHR';
 import Map from '../components/Map';
 import Background from '../images/background.svg';
 
@@ -22,7 +22,7 @@ const Services = ({ pageContext }) => {
       return <Beauty />;
     }
     if (pageContext.slug === `ipl-srh`) {
-      return <IPLSRH />;
+      return <IPLSHR />;
     }
     return <Skin />;
   }

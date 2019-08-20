@@ -60,7 +60,7 @@ const ServicesMenu = ({ service }) => {
             className="flex items-center justify-between leading-none px-4 py-1 uppercase transition-all w-full hover:bg-gray-800 hover:text-white"
             activeClassName="bg-gray-800 text-white border-gray-800"
           >
-            IPL/SRH
+            IPL/SHR
           </Link>
         </li>
       </ul>
