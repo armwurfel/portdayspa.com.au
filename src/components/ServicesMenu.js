@@ -56,7 +56,7 @@ const ServicesMenu = ({ service }) => {
         </li>
         <li className="border-t last:border-b border-gray-200 hover:border-gray-800">
           <Link
-            to="/services/ipl-srh"
+            to="/services/ipl-shr"
             className="flex items-center justify-between leading-none p-4 uppercase transition-all w-full hover:bg-gray-800 hover:text-white"
             activeClassName="bg-gray-100 border-gray-100"
           >

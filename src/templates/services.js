@@ -21,7 +21,7 @@ const Services = ({ pageContext }) => {
     if (pageContext.slug === `beauty`) {
       return <Beauty />;
     }
-    if (pageContext.slug === `ipl-srh`) {
+    if (pageContext.slug === `ipl-shr`) {
       return <IPLSHR />;
     }
     return <Skin />;
