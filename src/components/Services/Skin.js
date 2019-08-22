@@ -54,10 +54,10 @@ const Skin = () => {
         <Service title="Vita-LIFT ACE Power Facial" price="$150" time="60 mins">
           <p>
             Featuring our triple-action anti-ageing powerhouse ingredients
-            Vitamin A, Vitamin C and AHAs & BHA, this treatment combines pure
-            indulgence with skin rejuvenation. Actively works to reverse the
-            visible signs of ageing by perfecting and refining the skins overall
-            appearance.
+            Vitamin A, Vitamin C and AHAs &amp; BHA, this treatment combines
+            pure indulgence with skin rejuvenation. Actively works to reverse
+            the visible signs of ageing by perfecting and refining the skins
+            overall appearance.
           </p>
         </Service>
         <h3 className="font-bold mt-6 uppercase">
@@ -196,7 +196,7 @@ const Skin = () => {
         <h3 className="font-bold mt-6 uppercase">Organic Spa Treatments</h3>
         <Service title="Bio - Hydra" price="$149" time="45 mins">
           <p>
-            A treatment to stimulate the production of collagen & elastin,
+            A treatment to stimulate the production of collagen &amp; elastin,
             restore moisture loss and provide clarity to the skin. This gorgeous
             facial contains a unique formula of plant extracts and Hyaluronic
             acid to bind and lock in moisture.
