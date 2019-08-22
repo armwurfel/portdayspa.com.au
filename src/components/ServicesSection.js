@@ -57,7 +57,7 @@ const ServicesSection = () => {
               <li className="mt-4">Manicures &amp; Pedicures</li>
             </ul>
           </div>
-          <div className="mt-8 text-center w-full">
+          <div className="mt-8 ml-auto w-full md:w-3/5">
             <Link
               to="/services"
               className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800"

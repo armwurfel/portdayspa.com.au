@@ -41,7 +41,7 @@ const Why = () => {
             meeting you or welcoming you back again soon.
           </p>
         </div>
-        <div className="mt-8 text-center w-full">
+        <div className="mt-8 mx-auto w-full md:w-1/3">
           <Link
             to="/contact"
             className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800"
