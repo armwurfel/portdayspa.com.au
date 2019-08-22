@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
 import Layout from '../components/Layout';
-import Why from '../components/Why';
+import WhyPageComponent from '../components/WhyPageComponent';
 import Contact from '../components/Contact';
 import Map from '../components/Map';
 
@@ -11,7 +11,7 @@ const WhyPage = ({ data }) => {
   return (
     <>
       <Layout>
-        <Why />
+        <WhyPageComponent />
         <Contact data={data} />
         <Map />
       </Layout>
