@@ -37,7 +37,7 @@ const Footer = () => {
         />
       </div>
       <div className="mx-auto relative">
-        <div className="flex flex-wrap justify-center items-center max-w-6xl mx-auto p-4 w-full">
+        <div className="flex flex-wrap justify-center items-center max-w-6xl mx-auto px-4 py-12 w-full">
           <Link to="/" className="w-full md:w-1/2">
             <Logo className="fill-current max-w-xs mx-auto w-full" />
           </Link>
