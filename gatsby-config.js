@@ -29,12 +29,12 @@ module.exports = {
         siteUrl: `https://www.portdayspa.com.au`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-146370267-1`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
