@@ -1,16 +1,7 @@
 import React from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 
 const Why = () => {
-  const data = useStaticQuery(graphql`
-    query WhyQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
   return (
     <article
       id="why"
@@ -19,8 +10,9 @@ const Why = () => {
       <div className="flex flex-wrap max-w-6xl mx-auto w-full">
         <div className="flex items-center justify-center w-full md:w-1/3">
           <h2 className="font-semibold font-serif leading-tight md:p-10 text-2xl uppercase w-full">
-            Why Choose <br />
-            {data.site.siteMetadata.title}?
+            <span className="inline-block">Why Choose&nbsp;</span>
+            <span className="inline-block">Port Macquarie&nbsp;</span>
+            <span className="inline-block">Day Spa?</span>
           </h2>
         </div>
         <div className="md:col-2 w-full md:w-2/3">
