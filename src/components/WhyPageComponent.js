@@ -7,12 +7,14 @@ const WhyPageComponent = () => {
       className="bg-white px-4 md:px-6 py-24 relative w-full z-10"
     >
       <div className="flex flex-wrap max-w-6xl mx-auto w-full">
-        <div className="md:col-3 w-full">
+        <div className="w-full md:w-1/3">
           <h2 className="font-semibold font-serif leading-tight md:p-10 text-2xl uppercase w-full">
             <span className="inline-block">Why Choose&nbsp;</span>
             <span className="inline-block">Port Macquarie&nbsp;</span>
             <span className="inline-block">Day Spa?</span>
           </h2>
+        </div>
+        <div className="md:col-2 w-full md:w-2/3">
           <p className="mt-4 md:mt-0">
             <strong>Our Guarantee</strong> You are completely protected by our
             Guarantee that if you are not completely happy then we will gladly
