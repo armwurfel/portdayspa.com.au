@@ -1,5 +1,4 @@
 import React from 'react';
-import { Parallax } from 'react-scroll-parallax';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
 
@@ -29,14 +28,12 @@ const GiftVoucher = () => {
   `);
   return (
     <div className="overflow-hidden">
-      <Parallax y={[-50, 50]}>
-        <Image
-          className="w-full"
-          style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
-          fluid={data.hero.childImageSharp.fluid}
-          loading="eager"
-        />
-      </Parallax>
+      <Image
+        className="w-full"
+        style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
+        fluid={data.hero.childImageSharp.fluid}
+        loading="eager"
+      />
       <article
         id="gift-voucher"
         className="bg-white px-4 md:px-6 py-24 relative w-full z-10"

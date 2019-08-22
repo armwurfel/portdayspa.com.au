@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
-import { withController } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 
-import ParallaxUpdate from '../components/ParallaxUpdate';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import HeroNav from '../components/HeroNav';
@@ -14,14 +12,9 @@ import GiftVoucher from '../components/GiftVoucher';
 import Contact from '../components/Contact';
 import Map from '../components/Map';
 
-const IndexPage = ({ data, parallaxController }) => {
-  useEffect(() => {
-    parallaxController.update();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
+const IndexPage = ({ data }) => {
   return (
-    <ParallaxUpdate>
+    <>
       <SEO title="Home" />
       <HeroNav />
       <Hero />
@@ -32,16 +25,15 @@ const IndexPage = ({ data, parallaxController }) => {
         <Contact data={data} />
         <Map />
       </Layout>
-    </ParallaxUpdate>
+    </>
   );
 };
 
 IndexPage.propTypes = {
   data: PropTypes.object,
-  parallaxController: PropTypes.object,
 };
 
-export default withController(IndexPage);
+export default IndexPage;
 
 export const query = graphql`
   query IndexPageQuery {
