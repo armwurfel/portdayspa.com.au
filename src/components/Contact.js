@@ -19,7 +19,7 @@ const Contact = ({ data }) => {
       <article id="contact" className="bg-white px-4 py-24 relative w-full">
         <div className="flex flex-wrap max-w-6xl mx-auto">
           <div className="flex flex-1 flex-col px-4 w-full md:w-1/2">
-            <h2 className="font-semibold font-serif leading-tight text-3xl uppercase">
+            <h2 className="font-semibold font-serif leading-tight text-2xl uppercase">
               Contact us
             </h2>
             <p>
@@ -65,7 +65,7 @@ const Contact = ({ data }) => {
               >
                 <InstagramIcon className="fill-current mr-2 hover:text-gray-600 text-2xl" />
               </a>
-              <span className="font-semibold font-serif leading-none text-2xl uppercase">
+              <span className="font-semibold font-serif leading-none text-xl uppercase">
                 Follow us on social&nbsp;media
               </span>
             </p>
