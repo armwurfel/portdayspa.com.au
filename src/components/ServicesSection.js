@@ -12,11 +12,6 @@ const ServicesSection = () => {
           }
         }
       }
-      site {
-        siteMetadata {
-          title
-        }
-      }
     }
   `);
   return (
@@ -40,7 +35,9 @@ const ServicesSection = () => {
         <div className="flex flex-wrap max-w-6xl  mx-auto w-full">
           <div className="flex items-center justify-center w-full md:w-2/5">
             <h2 className="font-semibold font-serif leading-tight md:p-10 text-2xl uppercase w-full">
-              {data.site.siteMetadata.title} Services
+              <span className="inline-block">Port Macquarie&nbsp;</span>
+              <div className="inline-block">Day Spa&nbsp;</div>
+              Services
             </h2>
           </div>
           <div className="md:col-3 w-full md:w-3/5">
