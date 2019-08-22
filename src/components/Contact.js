@@ -23,7 +23,7 @@ const Contact = ({ data }) => {
               Contact us
             </h2>
             <p>
-              Fill out the form below or you can find us at{' '}
+              Fill out the form below or you can find us at <br />
               <strong>
                 <a
                   href={data.site.siteMetadata.googleMapsLink}
