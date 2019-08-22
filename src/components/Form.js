@@ -34,13 +34,13 @@ export default class ContactForm extends React.Component {
 
   render() {
     return (
-      <div className="border flex flex-col justify-center px-4 py-8 w-full">
+      <div className="border flex flex-1 flex-col px-4 py-8 relative w-full">
         <h2 className="font-semibold font-serif leading-tight mb-6 text-2xl text-center uppercase">
           Get in touch
         </h2>
         <form
           action="/success/"
-          className="w-full"
+          className="flex flex-1 flex-col w-full"
           data-netlify-honeypot="bot-field"
           data-netlify="true"
           method="post"
@@ -105,21 +105,20 @@ export default class ContactForm extends React.Component {
           </div>
 
           {/* Message */}
-          <div className="mb-6">
-            <label className="flex items-end" htmlFor="message">
+          <div className="flex flex-1 mb-6">
+            <label className="flex w-full" htmlFor="message">
               <textarea
-                className="appearance-none bg-white border border-gray-400 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:bg-gray-100"
+                className="appearance-none bg-white border border-gray-400 flex flex-1 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:bg-gray-100"
                 id="message"
                 name="message"
                 placeholder="Message:"
                 onChange={this.handleChange}
                 required
-                rows={6}
               />
             </label>
           </div>
 
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center">
             {/* Submit */}
             <button
               className="border border-gray-500 inline-block leading-none px-4 py-1 uppercase transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800"
