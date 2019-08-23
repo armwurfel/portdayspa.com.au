@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const HeroNav = () => {
   return (
-    <div className="absolute hidden md:block font-light inset-x-0 font-sans leading-none p-4 text-gray-700 hover:text-gray-800 uppercase -mx-3 text-sm top-0 tracking-wide z-10">
+    <div className="absolute hidden md:block font-light inset-x-0 font-sans leading-none p-4 text-gray-700 hover:text-gray-800 uppercase -mx-3 text-sm top-0 tracking-wide w-full z-10">
       <Link className="inline-block mx-3" to="/">
         Home
       </Link>
