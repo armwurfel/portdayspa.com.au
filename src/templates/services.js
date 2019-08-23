@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
 import SpaPackages from '../components/Services/SpaPackages';
 import Skin from '../components/Services/Skin';
 import Body from '../components/Services/Body';
@@ -33,7 +32,6 @@ const Services = ({ pageContext }) => {
 
   return (
     <Layout>
-      <SEO title={pageContext.title} />
       <div className="max-w-6xl mx-auto relative w-full">
         <div className="absolute hidden md:block inset-0">
           <img className="translate-left-50" src={Background} alt="" />

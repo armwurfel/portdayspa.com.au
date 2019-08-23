@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
+import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import Map from '../components/Map';
@@ -9,6 +10,7 @@ import Map from '../components/Map';
 const ContactPage = ({ data }) => {
   return (
     <>
+      <SEO title="Contact Us" />
       <Layout>
         <Contact data={data} />
         <Map />

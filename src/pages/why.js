@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
+import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import WhyPageComponent from '../components/WhyPageComponent';
 import Contact from '../components/Contact';
@@ -10,6 +11,7 @@ import Map from '../components/Map';
 const WhyPage = ({ data }) => {
   return (
     <>
+      <SEO title="Why" />
       <Layout>
         <WhyPageComponent />
         <Contact data={data} />
