@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import Service from '../utils/Service';
 import ServicesMenu from '../ServicesMenu';
@@ -87,6 +88,14 @@ const Skin = () => {
         <p>
           Ask about our group packages. Perfect for a hens weekend or girls get
           together! Includes spa cheese platter and champagne.
+        </p>
+        <p className="mt-4">
+          <Link
+            to="/information-and-conditions"
+            className="font-bold hover:underline"
+          >
+            Click here to view our Spa Information &amp; Conditions
+          </Link>
         </p>
       </div>
     </>

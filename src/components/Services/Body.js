@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import Service from '../utils/Service';
 import ServicesMenu from '../ServicesMenu';
@@ -125,6 +126,14 @@ const Body = () => {
         <Service title="Paraffin Upgrade" price="$29" time="15 mins">
           Add Paraffin to the above treatments.
         </Service>
+        <p className="mt-4">
+          <Link
+            to="/information-and-conditions"
+            className="font-bold hover:underline"
+          >
+            Click here to view our Spa Information &amp; Conditions
+          </Link>
+        </p>
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import ServicesMenu from '../ServicesMenu';
 
@@ -181,6 +182,14 @@ const Beauty = () => {
             <p>&nbsp;including lash tint&nbsp;-&nbsp;$99</p>
           </div>
         </div>
+        <p className="mt-4">
+          <Link
+            to="/information-and-conditions"
+            className="font-bold hover:underline"
+          >
+            Click here to view our Spa Information &amp; Conditions
+          </Link>
+        </p>
       </div>
     </>
   );

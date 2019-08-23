@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import Service from '../utils/Service';
 import ServicesMenu from '../ServicesMenu';
@@ -202,6 +203,14 @@ const Skin = () => {
             acid to bind and lock in moisture.
           </p>
         </Service>
+        <p className="mt-4">
+          <Link
+            to="/information-and-conditions"
+            className="font-bold hover:underline"
+          >
+            Click here to view our Spa Information &amp; Conditions
+          </Link>
+        </p>
       </div>
     </>
   );
