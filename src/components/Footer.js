@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
 
+import BackToTop from './BackToTop';
 import Logo from './Logo';
 
 const Footer = () => {
@@ -87,6 +88,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
+      <BackToTop />
     </footer>
   );
 };
