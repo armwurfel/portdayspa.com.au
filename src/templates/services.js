@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import SpaPackages from '../components/Services/SpaPackages';
 import Skin from '../components/Services/Skin';
 import Body from '../components/Services/Body';
 import Beauty from '../components/Services/Beauty';
@@ -12,6 +13,9 @@ import Background from '../images/background.svg';
 
 const Services = ({ pageContext }) => {
   function SelectedService() {
+    if (pageContext.slug === `spa-packages`) {
+      return <SpaPackages />;
+    }
     if (pageContext.slug === `skin`) {
       return <Skin />;
     }
@@ -24,7 +28,7 @@ const Services = ({ pageContext }) => {
     if (pageContext.slug === `ipl-shr`) {
       return <IPLSHR />;
     }
-    return <Skin />;
+    return <SpaPackages />;
   }
 
   return (

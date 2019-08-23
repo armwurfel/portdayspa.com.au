@@ -40,7 +40,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       path: `/services`,
       component: require.resolve('./src/templates/services.js'),
       context: {
-        slug: 'skin',
+        slug: 'spa-packages',
         title: service.title,
       },
     });

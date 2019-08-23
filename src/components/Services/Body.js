@@ -13,7 +13,7 @@ const Body = () => {
           Help relieve your body of modern dat pollutants, stress and lack of
           focus by indulging in a body treatment.
         </p>
-        <Service title="Warm Oil Wrap" price="$132" time="75 mins">
+        <Service title="Warm Oil Wrap" price="$132*" time="75 mins">
           This delicious treatment begins with a full body coconut sugar scrub,
           followed by a hydrating wrap utilising exotic oils combined with
           luxurious body butter to leave skin feeling soft and smooth.
