@@ -59,16 +59,16 @@ const WhyPageComponent = () => {
           </p>
           <p>
             <strong>Award Winning</strong>
-            <ul className="list-disc ml-5">
-              <li>Finalist Greater Port Macquarie Business Awards 2014</li>
-              <li>Winner Organic Spa Best New Spa 2013</li>
-              <li>Finalist Greater Port Macquarie Business Awards 2013</li>
-              <li>Finalist Greater Port Macquarie Business Awards 2012</li>
-              <li>Winner Greater Port Macquarie Business Awards 2011</li>
-              <li>Winner Greater Port Macquarie Business Awards 2010</li>
-            </ul>
           </p>
-          <p>
+          <ul className="list-disc ml-5">
+            <li>Finalist Greater Port Macquarie Business Awards 2014</li>
+            <li>Winner Organic Spa Best New Spa 2013</li>
+            <li>Finalist Greater Port Macquarie Business Awards 2013</li>
+            <li>Finalist Greater Port Macquarie Business Awards 2012</li>
+            <li>Winner Greater Port Macquarie Business Awards 2011</li>
+            <li>Winner Greater Port Macquarie Business Awards 2010</li>
+          </ul>
+          <p className="mt-4">
             <strong>Our friendly staff</strong> You will be delighted with the
             friendliness of our staff – they are always approachable and always
             professional.
