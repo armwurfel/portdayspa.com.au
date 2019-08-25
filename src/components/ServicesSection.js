@@ -46,7 +46,7 @@ const ServicesSection = () => {
               <li className="mt-4">Signature Facials</li>
               <li className="mt-4">Skin Workouts</li>
               <li className="mt-4">Skin Needling</li>
-              <li className="mt-4">Paramedical Skin Treatments</li>
+              <li className="mt-4">Paramedical Treatments</li>
               <li className="mt-4">Microdermabrasion</li>
               <li className="mt-4">IPL/ SHR</li>
               <li className="mt-4">Spa Packages</li>
