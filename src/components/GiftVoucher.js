@@ -47,13 +47,13 @@ const GiftVoucher = () => {
             </h2>
             <div className="mt-4">
               <p>
-                Give the most memorable gift of all allow us to wrap up
+                Give the most memorable gift of all, allow us to wrap up
                 tranquility and provide your loved one with a beautifully
                 presented gift voucher.
               </p>
-              <p>Purchasing your gift voucher has never been easier, you can</p>
               <p>
-                Select from our extensive spa packages, create your own special
+                Purchasing your gift voucher has never been easier, you can
+                select from our extensive spa packages, create your own special
                 treatment from our spa menu or simply specify a dollar ($)
                 amount and let them choose.
               </p>
