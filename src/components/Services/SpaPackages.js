@@ -20,7 +20,7 @@ const Skin = () => {
         </p>
         <Service
           title="Couples Indulgence"
-          price={[`$379 `, <br />, <small>(per couple)</small>]}
+          price={[`$389 `, <br />, <small>(per couple)</small>]}
           time="2 hrs"
         >
           <p>
@@ -31,7 +31,7 @@ const Skin = () => {
             and tension relieved with a spine tingling scalp massage.
           </p>
         </Service>
-        <Service title="Rejuvenation" price="$459" time="4 hrs 30 mins">
+        <Service title="Rejuvenation" price="$469" time="4 hrs 30 mins">
           <p>
             Your perfect day spa indulgence will begin with a smoothing sugar
             scrub followed by a soak in our hydrotherapy spa where you will
@@ -44,7 +44,7 @@ const Skin = () => {
             application of our Jane Iredale skincare makeup.
           </p>
         </Service>
-        <Service title="Tranquility" price="$239" time="2 hrs 15 mins">
+        <Service title="Tranquility" price="$249" time="2 hrs 15 mins">
           <p>
             Allow us to transport you to tranquility with exotic scents and warm
             stones. Aches and pains will be soothed as we massage your body with
@@ -53,21 +53,22 @@ const Skin = () => {
             sugar foot soak.
           </p>
         </Service>
-        <Service title="Serenity" price="$259" time="3 hrs">
+        <Service title="Serenity" price="$269" time="3 hrs">
           <p>
             This beautiful spa escape begins with a 60min renewal massage to
             sooth and relax. Skin is left glowing after a replenishing facial,
             then to complete, pamper your toes with a deluxe spa pedicure.
           </p>
         </Service>
-        <Service title="Heavenly" price="$209" time="1 hr 45 mins">
+        <Service title="Heavenly" price="$219" time="1 hr 45 mins">
           <p>
-            This beautiful spa escape begins with a 60min renewal massage to
-            sooth and relax. Skin is left glowing after a replenishing facial,
-            then to complete, pamper your toes with a deluxe spa pedicure.
+            Smooth your skin with a Coconut Sugar Body Exfoliation then drift
+            away in a coconut milk hydrotherapy spa with champagne, gourmet
+            chocolates and seasonal fruit. A full body massage and de-stressing
+            scalp massage will then provide you with new energy & vitality.
           </p>
         </Service>
-        <Service title="Perfection" price="$179" time="1 hr 30 mins">
+        <Service title="Perfection" price="$189" time="1 hr 30 mins">
           <p>
             Let us relieve tension from your back, neck and shoulders with a
             renewal massage, next you’ll be taken into a deep state of
@@ -76,12 +77,19 @@ const Skin = () => {
             an express pedicure and your choice of polish colour.
           </p>
         </Service>
-        <Service title="Mum to Be" price="$159" time="1 hr 45 mins">
+        <Service title="Mum to Be" price="$169" time="1 hr 45 mins">
           <p>
             The perfect pamper package for the expecting mum. Let us rejuvenate
             the skin with a luxurious facial including décolletage, neck,
             shoulders and scalp massage. Then pamper tired feet with a relaxing
             pedicure.
+          </p>
+        </Service>
+        <Service title="Mankind" price="$139" time="1 hr 30 mins">
+          <p>
+            Enjoy a revitalising soak in our hydrotherapy spa followed by a
+            renewal massage to soothe away any aches and pains, then finish with
+            a relaxing warm oil scalp massage.
           </p>
         </Service>
         <h3 className="font-bold mt-6 uppercase">Package Extras</h3>
