@@ -130,6 +130,7 @@ const Beauty = () => {
             <p>&nbsp;-&nbsp;$35</p>
           </div>
           <p>inc. exfoliation - $85</p>
+          <p className="mt-0">inc. full course of 6 visits - $180</p>
         </div>
         <h3 className="font-bold mt-6 uppercase">Make up</h3>
         <p>

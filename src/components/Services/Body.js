@@ -50,13 +50,20 @@ const Body = () => {
           tissues of the body to assist in rehabilitation, pain and injury
           management.
           <p className="mt-0">
-            <small>*45 mins - $87, 30 mins - $75</small>
+            <small>*45 mins - $90, 30 mins - $75</small>
           </p>
         </Service>
         <Service title="Aromatherapy" price="$149*" time="90 mins">
           A relaxing &amp; healing massage utilising essential oils.
           <p className="mt-0">
             <small>*60 mins - $99, 30 mins - $75</small>
+          </p>
+        </Service>
+        <Service title="Hot Stone Massage" price="$186" time="90 mins">
+          Using hot stones in combination with massage techniques to bring about
+          a feeling of deep relaxation &amp; well being.
+          <p className="mt-0">
+            <small>*60 mins - $139, 30 mins - $89</small>
           </p>
         </Service>
         <Service title="Pregnancy Massage" price="$99*" time="60 mins">
@@ -70,13 +77,6 @@ const Body = () => {
           </strong>
           <p className="mt-0">
             <small>*45 mins - $87, 30 mins - $75</small>
-          </p>
-        </Service>
-        <Service title="Hot Stone Massage" price="$186" time="90 mins">
-          Using hot stones in combination with massage techniques to bring about
-          a feeling of deep relaxation &amp; well being.
-          <p className="mt-0">
-            <small>*60 mins - $139, 30 mins - $89</small>
           </p>
         </Service>
         <h3 className="font-bold mt-6 uppercase">Hands &amp; Feet</h3>
@@ -114,6 +114,10 @@ const Body = () => {
           milk foot soak, polish the feet with a coconut sugar foot scrub and
           finish off with hydrating body butter. Add to any treatment or enjoy
           on it’s own.
+        </Service>
+        <Service title="File and Polish" price="$30" time="20 mins">
+          We will shape your nails and finish them with the polish colour of
+          your choice.
         </Service>
         <Service title="Shellac Removal" price="$20" time="30 mins">
           Using a nourishing solution containing macadamia nut oil and vitamin
