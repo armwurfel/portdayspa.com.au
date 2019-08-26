@@ -21,20 +21,15 @@ const WhyPageComponent = () => {
         </div>
         <div className="md:col-2 w-full md:w-2/3">
           <p className="mt-4 md:mt-0">
-            <strong>Our Guarantee</strong> You are completely protected by our
-            Guarantee that if you are not completely happy then we will gladly
-            redo the service.
-          </p>
-          <p>
-            <strong>Clean!</strong> Your treatment room will always be
+            <strong>Clean</strong> Your treatment room will always be
             immaculate! You will notice our level of cleanliness. Everything
             that we use to perform your individual treatment that can be
             disposable is. Our premises are inspected regularly by department of
             Health officials, giving you peace of mind.
           </p>
           <p>
-            <strong>Tranquility Plus!</strong> We take great care in delivering
-            a tranquil environment with soothing music, the ambient glow of
+            <strong>Tranquility Plus</strong> We take great care in delivering a
+            tranquil environment with soothing music, the ambient glow of
             burning candles and our caring professional therapist. All is
             attuned to provide you with the relaxed atmosphere you deserve.
           </p>
@@ -44,7 +39,7 @@ const WhyPageComponent = () => {
             4.00pm just so you can choose when you want to visit.
           </p>
           <p>
-            <strong>Privacy!</strong> Your privacy is ensured with floor to
+            <strong>Privacy</strong> Your privacy is ensured with floor to
             ceiling walls and special sound proofed doors. Your therapist’s
             confidentiality is of paramount importance.
           </p>
@@ -66,6 +61,7 @@ const WhyPageComponent = () => {
             <strong>Award Winning</strong>
           </p>
           <ul className="list-disc ml-5">
+            <li>Phorest Salon Software 5 Star Client Experience Award 2019</li>
             <li>Finalist Greater Port Macquarie Business Awards 2014</li>
             <li>Winner Organic Spa Best New Spa 2013</li>
             <li>Finalist Greater Port Macquarie Business Awards 2013</li>
