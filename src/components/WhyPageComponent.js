@@ -21,6 +21,12 @@ const WhyPageComponent = () => {
         </div>
         <div className="md:col-2 w-full md:w-2/3">
           <p className="mt-4 md:mt-0">
+            <strong>Gift Cards</strong> Give the most memorable gift of all…
+            Allow us to wrap up tranquility and provide your loved one with a
+            beautifully presented gift voucher. Best Spa gift cards and Spa
+            Finder gift cards available.
+          </p>
+          <p>
             <strong>Clean</strong> Your treatment room will always be
             immaculate! You will notice our level of cleanliness. Everything
             that we use to perform your individual treatment that can be
