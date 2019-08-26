@@ -33,7 +33,7 @@ const ServicesMenu = ({ service }) => {
             <Link
               to="/services/spa-packages"
               className={`${
-                isActive ? 'bg-gray-800 text-white border-gray-800' : ''
+                isActive ? 'bg-gray-100 border-gray-100' : ''
               } flex items-center justify-between leading-none p-4 uppercase transition-all w-full hover:bg-gray-800 hover:text-white`}
               activeClassName="bg-gray-100 border-gray-100"
             >
