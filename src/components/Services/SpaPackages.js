@@ -85,7 +85,7 @@ const Skin = () => {
             pedicure.
           </p>
         </Service>
-        <Service title="Mankind" price="$139" time="1 hr 30 mins">
+        <Service title="Mankind" price="$149" time="1 hr 30 mins">
           <p>
             Enjoy a revitalising soak in our hydrotherapy spa followed by a
             renewal massage to soothe away any aches and pains, then finish with
