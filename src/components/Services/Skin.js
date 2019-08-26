@@ -153,7 +153,7 @@ const Skin = () => {
             ingredients to help smooth, plump and boost skin’s hydration levels.
           </p>
         </Service>
-        <Service title="Skin Needling (Face)" price="$349">
+        <Service title="Skin Needling (Face)" price="$359">
           <p>
             This radiance-boosting mask combines a powerful blend of 8 skin
             brightening agents to rapidly reduce the appearance of
