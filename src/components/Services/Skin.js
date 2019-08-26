@@ -9,6 +9,17 @@ const Skin = () => {
     <>
       <ServicesMenu service="Skin" />
       <div className="px-4">
+        <h3 className="font-bold mt-6 uppercase">Consultations</h3>
+        <Service title="Ultra Skin Consultation" price="$50*" time="30 mins">
+          <p>
+            Our comprehensive ULTRA Consultation process is designed to help you
+            create a customised treatment and homecare plan, allowing you to
+            address your skin concerns and reveal your best ever skin.
+          </p>
+          <p className="mt-0">
+            <small>*This cost is redeemable on products/treatments.</small>
+          </p>
+        </Service>
         <h3 className="font-bold mt-6 uppercase">
           Ultraceuticals Signature Facials
         </h3>
