@@ -9,7 +9,7 @@ import Form from './Form';
 
 const Contact = ({ data }) => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden relative z-10">
       <Image
         className="w-full"
         style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}

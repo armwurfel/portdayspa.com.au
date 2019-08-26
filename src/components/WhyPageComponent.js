@@ -1,12 +1,17 @@
 import React from 'react';
 
+import Background from '../images/background.svg';
+
 const WhyPageComponent = () => {
   return (
     <article
       id="why"
       className="bg-white px-4 md:px-6 py-24 relative w-full z-10"
     >
-      <div className="flex flex-wrap max-w-6xl mx-auto w-full">
+      <div className="absolute hidden md:block inset-0">
+        <img className="translate-left-50" src={Background} alt="" />
+      </div>
+      <div className="flex flex-wrap max-w-6xl mx-auto relative w-full">
         <div className="w-full md:w-1/3">
           <h2 className="font-semibold font-serif leading-tight md:p-10 text-2xl uppercase w-full">
             <span className="inline-block">Why Choose&nbsp;</span>
