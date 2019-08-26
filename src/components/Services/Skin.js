@@ -117,7 +117,11 @@ const Skin = () => {
             <small>*45 mins + Infusion $200</small>
           </p>
         </Service>
-        <Service title="Radiance Renew Workout" price="$160" time="60 mins">
+        <Service
+          title="Radiance Renew Skin Workout"
+          price="$160"
+          time="60 mins"
+        >
           <p>
             This ultimate 3-1 skin workout treatment is designed to refine
             pores, smooth coarse texture and help renew skins’ dewy youthful
