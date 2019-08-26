@@ -22,7 +22,10 @@ const Map = () => {
   `);
   return (
     <>
-      <Image fluid={data.afterpay.childImageSharp.fluid} />
+      <Image
+        fluid={data.afterpay.childImageSharp.fluid}
+        alt="We accept afterpay."
+      />
       <LazyLoad height={256} once>
         <iframe
           src={data.site.siteMetadata.googleMapsEmbed}
