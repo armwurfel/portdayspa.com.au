@@ -8,7 +8,7 @@ const Skin = () => {
   return (
     <>
       <ServicesMenu service="Spa Packages" />
-      <div className="px-4">
+      <div className="mt-6 px-4">
         <p>
           Indulge with our signature spa packages designed to relax, restore and
           re-energise. Enjoy on your own or share our double treatment room with
