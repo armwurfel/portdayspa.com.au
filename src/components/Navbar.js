@@ -8,15 +8,15 @@ const Navbar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-white leading-none md:px-10 relative sticky top-0 w-full z-40">
-      <div className="md:flex items-center max-w-6xl mx-auto py-4 w-full">
+    <header className="bg-white leading-none lg:px-10 relative sticky top-0 w-full z-40">
+      <div className="lg:flex items-center max-w-6xl mx-auto py-4 w-full">
         <div className="flex items-center justify-between w-full">
           <Link to="/" className="flex items-center p-4">
             <Logo className="fill-current h-10" />
           </Link>
 
           <button
-            className="flex md:hidden items-center justify-center p-4"
+            className="flex lg:hidden items-center justify-center p-4"
             onClick={() => toggleExpansion(!isExpanded)}
             type="button"
           >
@@ -34,15 +34,23 @@ const Navbar = () => {
           id="nav"
           className={`${
             isExpanded ? `block` : `hidden`
-          } md:flex md:flex-1 md:items-center md:justify-end relative w-full md:w-auto`}
+          } lg:flex lg:flex-1 lg:items-center lg:justify-end relative w-full lg:w-auto`}
         >
           <NavLink link="/" title="Home" />
           <NavLink link="/why" title="Why" />
           <NavLink link="/services" title="Services" />
           <NavLink link="/gift-voucher" title="Gift Voucher" />
+          <a
+            className="block border-t lg:border-none flex-shrink-0 font-light p-4 hover:text-gray-800 text-sm tracking-wide uppercase"
+            href="http://www.ultraceuticals.com/au/index.php/shopnow/?ref=portm123"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Shop Online
+          </a>
           <NavLink link="/contact" title="Contact" />
           <a
-            className="block border-t md:border-none font-light p-4 text-sm tracking-wide uppercase"
+            className="block border-t lg:border-none font-light p-4 text-sm tracking-wide uppercase"
             href="https://phorest.com/book/salons/portmacquariedayspa"
             rel="noopener noreferrer"
             target="_blank"
@@ -60,7 +68,7 @@ const Navbar = () => {
 const NavLink = ({ link, title }) => (
   <Link
     to={link}
-    className="block border-t md:border-none flex-shrink-0 font-light p-4 hover:text-gray-800 text-sm tracking-wide uppercase"
+    className="block border-t lg:border-none flex-shrink-0 font-light p-4 hover:text-gray-800 text-sm tracking-wide uppercase"
   >
     {title}
   </Link>

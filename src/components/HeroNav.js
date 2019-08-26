@@ -16,11 +16,19 @@ const HeroNav = () => {
       <Link className="inline-block mx-3" to="/gift-voucher">
         Gift Voucher
       </Link>
+      <a
+        className="inline-block mx-3"
+        href="http://www.ultraceuticals.com/au/index.php/shopnow/?ref=portm123"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Shop Online
+      </a>
       <Link className="inline-block mx-3" to="/contact">
         Contact
       </Link>
       <a
-        className="border border-gray-500 inline-block mx-3 px-2 py-1 transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800"
+        className="bg-white border border-gray-500 inline-block mx-3 px-2 py-1 transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800"
         href="https://phorest.com/book/salons/portmacquariedayspa"
         rel="noopener noreferrer"
         target="_blank"
