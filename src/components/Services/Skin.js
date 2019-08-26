@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Service from '../utils/Service';
 import ServicesMenu from '../ServicesMenu';
@@ -172,60 +171,6 @@ const Skin = () => {
             luminous complexion.
           </p>
         </Service>
-        <h3 className="font-bold mt-6 uppercase">Skinstitut Treatments</h3>
-        <Service title="Multi Active Power Boost" price="$95" time="45 mins">
-          <p>
-            Recharge and revitalise sluggish, environmentally stressed,
-            dehydrated or ageing skin with Skinstitut’s ‘Multi Active Power
-            Boost.’ Suitable for all skin types, the deep cleansing actions of
-            lactic acid, combined with a power exfoliation, steam and squeeze
-            (if required), followed by a pressure point massage, will boost
-            skin’s natural radiance, and internal wellbeing.
-          </p>
-        </Service>
-        <Service title="Medi Express" price="$76" time="30 mins">
-          <p>
-            An express maintenance treatment that provides increased cellular
-            turnover and intense hydration for an instantly radiant and firmer
-            looking skin.
-          </p>
-        </Service>
-        <Service title="Ageless Peel" price="$149" time="45 mins">
-          <p>
-            A cosmedical grade peel to target visible signs of aging and sun
-            damage. Works on a dermal level to encourage a revitalised, smoother
-            and more even complexion.
-          </p>
-        </Service>
-        <Service title="Peel Accelerator" price="$99" time="30 mins">
-          <p>
-            Chirally correct vitamin and acid peel to renew, brighten and smooth
-            the skin.
-          </p>
-        </Service>
-        <Service title="Enzymatic AHA Peel" price="$79" time="30 mins">
-          <p>
-            A gentle micro exfoliating treatment designed to soothe, hydrate and
-            micro exfoliate dry, flaking and sensitised skins.
-          </p>
-        </Service>
-        <h3 className="font-bold mt-6 uppercase">Organic Spa Treatments</h3>
-        <Service title="Bio - Hydra" price="$149" time="45 mins">
-          <p>
-            A treatment to stimulate the production of collagen &amp; elastin,
-            restore moisture loss and provide clarity to the skin. This gorgeous
-            facial contains a unique formula of plant extracts and Hyaluronic
-            acid to bind and lock in moisture.
-          </p>
-        </Service>
-        <p className="mt-4">
-          <Link
-            to="/information-and-conditions"
-            className="font-bold hover:underline"
-          >
-            Click here to view our Spa Information &amp; Conditions
-          </Link>
-        </p>
       </div>
     </>
   );
