@@ -11,7 +11,7 @@ const Body = () => {
       <div className="px-4">
         <h3 className="font-bold mt-6 uppercase">Body treatments</h3>
         <p>
-          Help relieve your body of modern dat pollutants, stress and lack of
+          Help relieve your body of modern day pollutants, stress and lack of
           focus by indulging in a body treatment.
         </p>
         <Service title="Warm Oil Wrap" price="$132*" time="75 mins">
