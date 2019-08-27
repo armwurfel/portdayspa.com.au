@@ -40,13 +40,15 @@ const ServicesSection = () => {
               Services
             </h2>
           </div>
-          <div className="md:col-3 w-full md:w-3/5">
+          <div className="md:col-2 lg:col-3 w-full md:w-3/5">
             <ul className="font-bold leading-none pr-12">
               <li className="mt-4 md:mt-0">Skin Consultations</li>
               <li className="mt-4">Signature Facials</li>
               <li className="mt-4">Skin Workouts</li>
               <li className="mt-4">Skin Needling</li>
-              <li className="mt-4">Paramedical Treatments</li>
+              <li className="mt-4">
+                Paramedical<span>&nbsp;</span>Treatments
+              </li>
               <li className="mt-4">Microdermabrasion</li>
               <li className="mt-4">IPL/ SHR</li>
               <li className="mt-4">Spa Packages</li>
