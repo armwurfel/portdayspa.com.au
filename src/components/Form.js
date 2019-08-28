@@ -63,6 +63,7 @@ export default class ContactForm extends React.Component {
           {/* Name */}
           <div className="mb-6">
             <label className="flex items-end" htmlFor="name">
+              <span className="sr-only">Name</span>
               <input
                 className="appearance-none bg-white border border-gray-400 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:bg-gray-100"
                 id="name"
@@ -78,6 +79,7 @@ export default class ContactForm extends React.Component {
           {/* Email address */}
           <div className="mb-6">
             <label className="flex items-end" htmlFor="email">
+              <span className="sr-only">Email</span>
               <input
                 className="appearance-none bg-white border border-gray-400 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:bg-gray-100"
                 id="email"
@@ -93,6 +95,7 @@ export default class ContactForm extends React.Component {
           {/* Phone number */}
           <div className="mb-6">
             <label className="flex items-end" htmlFor="phone">
+              <span className="sr-only">Phone number</span>
               <input
                 className="appearance-none bg-white border border-gray-400 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:bg-gray-100"
                 id="phone"
@@ -107,6 +110,7 @@ export default class ContactForm extends React.Component {
           {/* Message */}
           <div className="flex flex-1 mb-6">
             <label className="flex w-full" htmlFor="message">
+              <span className="sr-only">Message</span>
               <textarea
                 className="appearance-none bg-white border border-gray-400 flex flex-1 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:bg-gray-100"
                 id="message"
