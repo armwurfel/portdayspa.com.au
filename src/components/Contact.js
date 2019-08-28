@@ -51,6 +51,7 @@ const Contact = ({ data }) => {
             <p className="flex flex-wrap items-center mb-auto">
               <a
                 className="py-2"
+                aria-label="Facebook"
                 href={data.site.siteMetadata.facebook}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -59,6 +60,7 @@ const Contact = ({ data }) => {
               </a>
               <a
                 className="py-2"
+                aria-label="Instagram"
                 href={data.site.siteMetadata.instagram}
                 rel="noopener noreferrer"
                 target="_blank"
