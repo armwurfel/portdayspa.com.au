@@ -18,7 +18,7 @@ const SpaInformationAndConditionsPage = () => {
   const { phone, phoneFormatted } = data.site.siteMetadata;
   return (
     <>
-      <SEO title="Spa Information & Condition" />
+      <SEO title="Spa Information &amp; Conditions" />
       <Layout>
         <article
           id="information-and-conditions"

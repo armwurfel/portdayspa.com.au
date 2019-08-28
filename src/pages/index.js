@@ -15,7 +15,7 @@ import Map from '../components/Map';
 const IndexPage = ({ data }) => {
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Day Spa | Massage | Beauty" />
       <HeroNav />
       <Hero />
       <Layout>
