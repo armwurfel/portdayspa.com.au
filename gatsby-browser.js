@@ -24,8 +24,8 @@ exports.wrapRootElement.propTypes = {
 };
 
 // Call update function when changing routes
-const ParallaxUpdate = require('./src/components/ParallaxUpdate');
+const parallaxUpdate = require('./src/components/parallaxUpdate');
 
 exports.onRouteUpdate = () => {
-  return ParallaxUpdate;
+  return parallaxUpdate;
 };
