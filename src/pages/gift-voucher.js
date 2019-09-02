@@ -5,9 +5,9 @@ import Layout from '../components/Layout';
 
 const GiftVoucher = () => {
   useEffect(() => {
-    (function(g, i, f, t, u, p) {
-      i = g.createElement('script');
-      f = g.getElementsByTagName('script')[0];
+    (function(g) {
+      const i = g.createElement('script');
+      const f = g.getElementsByTagName('script')[0];
       i.async = 1;
       i.src = 'https://cdn.giftup.app/dist/gift-up.js';
       f.parentNode.insertBefore(i, f);
