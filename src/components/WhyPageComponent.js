@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Afterpay from './icons/Afterpay';
 import Background from '../images/background.svg';
 
 const WhyPageComponent = () => {
@@ -86,6 +87,9 @@ const WhyPageComponent = () => {
             <br />
             Chances are we have you covered. We look forward to meeting you or
             welcoming you back again soon.
+          </p>
+          <p>
+            <Afterpay className="mx-auto w-1/2" />
           </p>
         </div>
       </div>
