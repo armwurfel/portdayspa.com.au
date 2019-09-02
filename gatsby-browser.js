@@ -5,7 +5,27 @@
  */
 
 // Load CSS from Tailwind
-import './src/css/tailwind.css';
+require('./src/css/tailwind.css');
 
 // Self host fonts using Typefaces.js https://github.com/KyleAMathews/typefaces
-import 'typeface-raleway';
+require('typeface-raleway');
+
+// Wrap root element in ParallaxProvider
+const React = require('react');
+const { ParallaxProvider } = require('react-scroll-parallax');
+const PropTypes = require('prop-types');
+
+exports.wrapRootElement = ({ element }) => {
+  return <ParallaxProvider>{element}</ParallaxProvider>;
+};
+
+exports.wrapRootElement.propTypes = {
+  element: PropTypes.object,
+};
+
+// Call update function when changing routes
+const ParallaxUpdate = require('./src/components/ParallaxUpdate');
+
+exports.onRouteUpdate = () => {
+  return ParallaxUpdate;
+};
