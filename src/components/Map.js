@@ -1,7 +1,6 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import { graphql, useStaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
 
 const Map = () => {
   const data = useStaticQuery(graphql`
@@ -11,21 +10,10 @@ const Map = () => {
           googleMapsEmbed
         }
       }
-      afterpay: file(relativePath: { eq: "afterpay.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 3000, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
     }
   `);
   return (
     <>
-      <Image
-        fluid={data.afterpay.childImageSharp.fluid}
-        alt="We accept afterpay."
-      />
       <LazyLoad height={256} once>
         <iframe
           src={data.site.siteMetadata.googleMapsEmbed}

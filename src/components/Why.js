@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import Afterpay from './icons/Afterpay';
+
 const Why = () => {
   return (
     <article
@@ -39,6 +41,9 @@ const Why = () => {
             Macquarie Day Spa your choice, for the things that you find
             important. Chances are we have you covered. We look forward to
             meeting you or welcoming you back again soon.
+          </p>
+          <p>
+            <Afterpay className="mx-auto w-1/2" />
           </p>
         </div>
         <div className="mt-8 mx-auto w-full md:w-1/3">
