@@ -9,7 +9,7 @@ import SocialWidgetDesktop from './SocialWidgetDesktop';
 const Layout = ({ children }) => (
   <div className="antialiased flex flex-col font-sans leading-relaxed min-h-screen text-gray-700">
     <Navbar />
-    <main className="bg-white flex flex-1 flex-col mx-auto w-full">
+    <main className="bg-white flex flex-1 flex-col mx-auto relative w-full">
       {children}
     </main>
     <Footer />
