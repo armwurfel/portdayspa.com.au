@@ -22,7 +22,7 @@ const ServicesSection = () => {
           <Image
             style={{
               minHeight: `30rem`,
-              height: `100%`,
+              height: `100vh`,
               maxHeight: `50rem`,
               width: `100%`,
             }}

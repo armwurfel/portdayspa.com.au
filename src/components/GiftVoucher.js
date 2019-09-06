@@ -32,7 +32,12 @@ const GiftVoucher = () => {
       <Parallax y={[-50, 50]}>
         <Image
           className="w-full"
-          style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
+          style={{
+            minHeight: `30rem`,
+            height: `100vh`,
+            maxHeight: `50rem`,
+            width: `100%`,
+          }}
           fluid={data.hero.childImageSharp.fluid}
           loading="eager"
         />
