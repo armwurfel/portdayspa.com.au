@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 const GiftVoucher = () => {
   const data = useStaticQuery(graphql`
@@ -28,12 +29,16 @@ const GiftVoucher = () => {
   `);
   return (
     <div className="overflow-hidden">
-      <Image
-        className="w-full"
-        style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
-        fluid={data.hero.childImageSharp.fluid}
-        loading="eager"
-      />
+      <ParallaxProvider>
+        <Parallax className="custom-class" y={[-50, 50]} tagOuter="figure">
+          <Image
+            className="w-full"
+            style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
+            fluid={data.hero.childImageSharp.fluid}
+            loading="eager"
+          />
+          </Parallax>
+        </ParallaxProvider>
       <article
         id="gift-voucher"
         className="bg-white px-4 md:px-6 py-24 relative w-full z-10"
@@ -68,12 +73,16 @@ const GiftVoucher = () => {
             </div>
           </div>
           <div className="mt-8 md:mt-0 md:pl-12 w-full md:w-2/3">
-            <Image
-              className="w-full"
-              style={{ transform: `rotate(-10deg)` }}
-              fluid={data.voucher.childImageSharp.fluid}
-              loading="eager"
-            />
+            <ParallaxProvider>
+              <Parallax className="custom-class" y={[-10, 10]} tagOuter="figure">
+                <Image
+                  className="w-full"
+                  style={{ transform: `rotate(-10deg)` }}
+                  fluid={data.voucher.childImageSharp.fluid}
+                  loading="eager"
+                />
+              </Parallax>
+            </ParallaxProvider>
           </div>
         </div>
       </article>

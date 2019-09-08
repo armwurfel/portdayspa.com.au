@@ -6,16 +6,21 @@ import FacebookIcon from './icons/Facebook';
 import InstagramIcon from './icons/Instagram';
 import InstagramWidget from './Instagram';
 import Form from './Form';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 const Contact = ({ data }) => {
   return (
     <div className="overflow-hidden relative z-10">
-      <Image
-        className="w-full"
-        style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
-        fluid={data.hero.childImageSharp.fluid}
-        loading="eager"
-      />
+      <ParallaxProvider>
+        <Parallax className="custom-class" y={[-50, 50]} tagOuter="figure">
+          <Image
+            className="w-full"
+            style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
+            fluid={data.hero.childImageSharp.fluid}
+            loading="eager"
+          />
+        </Parallax>
+      </ParallaxProvider>
       <article id="contact" className="bg-white px-4 py-24 relative w-full">
         <div className="flex flex-wrap max-w-6xl mx-auto">
           <div className="flex flex-1 flex-col px-4 w-full md:w-1/2">
