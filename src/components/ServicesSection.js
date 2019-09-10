@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 
 const ServicesSection = () => {
   const data = useStaticQuery(graphql`
@@ -18,8 +18,7 @@ const ServicesSection = () => {
   return (
     <>
       <div className="overflow-hidden">
-        <ParallaxProvider>
-          <Parallax className="custom-class" y={[-50, 50]} tagOuter="figure">
+          <Parallax className="custom-class" y={[-50, 50]} >
             <Image
               style={{
                 minHeight: `30rem`,
@@ -31,7 +30,6 @@ const ServicesSection = () => {
               loading="eager"
             />
           </Parallax>
-        </ParallaxProvider>
       </div>
       <article
         id="services"
