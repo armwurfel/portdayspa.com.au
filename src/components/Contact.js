@@ -7,15 +7,22 @@ import InstagramIcon from './icons/Instagram';
 import InstagramWidget from './Instagram';
 import Form from './Form';
 
+import {ParallaxLayer} from 'react-spring/renderprops-addons'
+
 const Contact = ({ data }) => {
   return (
-    <div className="overflow-hidden relative z-10">
+    <>
+    {/* <div className="overflow-hidden relative z-10" style={{height: "100vh"}}> */}
+    <ParallaxLayer offset={0.2} speed={1}> 
       <Image
         className="w-full"
         style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
         fluid={data.hero.childImageSharp.fluid}
         loading="eager"
       />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={0.99} speed={0.5}> 
       <article id="contact" className="bg-white px-4 py-24 relative w-full">
         <div className="flex flex-wrap max-w-6xl mx-auto">
           <div className="flex flex-1 flex-col px-4 w-full md:w-1/2">
@@ -78,7 +85,11 @@ const Contact = ({ data }) => {
           </div>
         </div>
       </article>
-    </div>
+      </ParallaxLayer>
+          {/* </div> */}
+      </>
+
+    
   );
 };
 

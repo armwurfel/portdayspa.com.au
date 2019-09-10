@@ -6,15 +6,29 @@ import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import Map from '../components/Map';
-
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 const ContactPage = ({ data }) => {
+  let parallax;
   return (
     <>
       <SEO title="Contact Us" />
-      <Layout>
+      
+      {/* <Layout> */}
+      <Parallax scrolling={true} ref={ref => (parallax = ref)} pages={2.6}>
+        <ParallaxLayer offset={0} speed={0}> 
+        <Navbar />
+        </ParallaxLayer>
         <Contact data={data} />
-        <Map />
-      </Layout>
+        <ParallaxLayer offset={1.7} speed={0.5}> 
+          <Map />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2.01} speed={0.5}> 
+          <Footer />
+        </ParallaxLayer>
+      </Parallax>
+      {/* </Layout> */}
     </>
   );
 };
