@@ -3,6 +3,10 @@ import { withController } from 'react-scroll-parallax';
 import Image from 'gatsby-image';
 
 class ContactImg extends React.Component {
+    constructor(props) {
+        super(props);
+
+    }
     handleLoad = () => {
         // updates cached values after image dimensions have loaded
         this.props.parallaxController.update();

@@ -9,7 +9,7 @@ import Hero from '../components/Hero';
 import Why from '../components/Why';
 import ServicesSection from '../components/ServicesSection';
 import GiftVoucher from '../components/GiftVoucher';
-import Contact from '../components/Contact';
+import ContactHome from '../components/ContactHome';
 import Map from '../components/Map';
 
 const IndexPage = ({ data }) => {
@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
         <Why />
         <ServicesSection />
         <GiftVoucher />
-        <Contact data={data} />
+        <ContactHome data={data} />
         <Map />
       </Layout>
     </>
