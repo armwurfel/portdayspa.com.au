@@ -2,11 +2,10 @@ import React from 'react';
 import Media from 'react-media';
 import PropTypes from 'prop-types';
 
+import { ParallaxProvider } from 'react-scroll-parallax';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import SocialWidgetDesktop from './SocialWidgetDesktop';
-
-import { ParallaxProvider } from 'react-scroll-parallax';
 
 const Layout = ({ children }) => (
   <ParallaxProvider>

@@ -38,7 +38,7 @@ const Hero = () => {
     <div className="overflow-hidden relative">
       <div className="max-w-6xl ml-auto">
         <ParallaxProvider>
-          <Parallax className="custom-class" y={[-50, 50]}>
+          <Parallax className="custom-class" y={[-75, 50]}>
             <Media query="(min-width: 768px)">
               {matches =>
                 matches ? (

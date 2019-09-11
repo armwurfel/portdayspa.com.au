@@ -1,28 +1,28 @@
 import React from 'react';
 import { withController } from 'react-scroll-parallax';
 import Image from 'gatsby-image';
+import PropTypes from 'prop-types';
 
-class ContactImg extends React.Component {
-    constructor(props) {
-        super(props);
+const ContactImg = ({ parallaxController, fluid }) => {
+  const handleLoad = () => {
+    // updates cached values after image dimensions have loaded
+    parallaxController.update();
+  };
 
-    }
-    handleLoad = () => {
-        // updates cached values after image dimensions have loaded
-        this.props.parallaxController.update();
-    };
- 
-    render() {
-        return(
-            <Image
-                onLoad={this.handleLoad}
-                className="w-full"
-                style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
-                fluid={this.props.fluid}
-                loading="eager"
-            />
-        );
-    }
-}
- 
+  return (
+    <Image
+      onLoad={() => handleLoad}
+      className="w-full"
+      style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
+      fluid={fluid}
+      loading="eager"
+    />
+  );
+};
+
+ContactImg.propTypes = {
+  parallaxController: PropTypes.object,
+  fluid: PropTypes.object,
+};
+
 export default withController(ContactImg);
