@@ -1,7 +1,7 @@
 import React from 'react';
-import { withController } from 'react-scroll-parallax';
 import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
+import { withController } from 'react-scroll-parallax';
 
 const ContactImg = ({ parallaxController, fluid }) => {
   const handleLoad = () => {

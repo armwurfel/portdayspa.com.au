@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
-
 import { Parallax } from 'react-scroll-parallax';
+
 import FacebookIcon from './icons/Facebook';
 import InstagramIcon from './icons/Instagram';
 import InstagramWidget from './Instagram';

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { Parallax } from 'react-scroll-parallax';
+
 import FacebookIcon from './icons/Facebook';
 import InstagramIcon from './icons/Instagram';
 import InstagramWidget from './Instagram';
@@ -11,7 +11,7 @@ import Form from './Form';
 const Contact = ({ data }) => {
   return (
     <div className="overflow-hidden relative z-10">
-      <Parallax className="custom-classa" y={[-30, 30]}>
+      <Parallax className="contact-page-img" y={[-30, 30]}>
         <ContactImg fluid={data.hero.childImageSharp.fluid} />
       </Parallax>
       <article id="contact" className="bg-white px-4 py-24 relative w-full">
