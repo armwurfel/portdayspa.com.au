@@ -11,7 +11,7 @@ import Form from './Form';
 const ContactHome = ({ data }) => {
   return (
     <div className="overflow-hidden relative z-10">
-      <Parallax className="custom-class" y={[-60, 60]}>
+      <Parallax y={[-50, 50]}>
         <Image
           className="w-full"
           style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}

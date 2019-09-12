@@ -29,7 +29,7 @@ const GiftVoucher = () => {
   `);
   return (
     <div className="overflow-hidden">
-      <Parallax className="custom-class" y={[-50, 50]}>
+      <Parallax y={[-50, 50]}>
         <Image
           className="w-full"
           style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
