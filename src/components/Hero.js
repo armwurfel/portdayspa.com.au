@@ -58,7 +58,6 @@ const Hero = () => {
                     minHeight: `30rem`,
                     height: `100%`,
                     width: `100%`,
-                    objectPosition: `right`,
                   }}
                   fluid={data.mobile.childImageSharp.fluid}
                   loading="eager"
