@@ -71,14 +71,12 @@ const GiftVoucher = () => {
             </div>
           </div>
           <div className="mt-8 md:mt-0 md:pl-12 w-full md:w-2/3">
-            <Parallax className="custom-class" y={[-10, 10]}>
-              <Image
-                className="w-full"
-                style={{ transform: `rotate(-10deg)` }}
-                fluid={data.voucher.childImageSharp.fluid}
-                loading="eager"
-              />
-            </Parallax>
+            <Image
+              className="w-full"
+              style={{ transform: `rotate(-10deg)` }}
+              fluid={data.voucher.childImageSharp.fluid}
+              loading="eager"
+            />
           </div>
         </div>
       </article>
