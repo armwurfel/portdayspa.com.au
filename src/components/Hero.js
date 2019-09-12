@@ -38,14 +38,16 @@ const Hero = () => {
     <div className="overflow-hidden relative">
       <div className="max-w-6xl ml-auto">
         <ParallaxProvider>
-          <Parallax className="custom-class" y={[-50, 50]}>
+          <Parallax className="hero-img" y={[-30, 30]}>
             <Media query="(min-width: 768px)">
               {matches =>
                 matches ? (
                   <Image
                     style={{
-                      minHeight: `30rem`,
+                      minHeight: `35rem`,
                       height: `100%`,
+                      maxHeight: `50rem`,
+                      objectPosition: `right top`,
                     }}
                     fluid={data.hero.childImageSharp.fluid}
                     loading="eager"
@@ -57,7 +59,8 @@ const Hero = () => {
                       minHeight: `30rem`,
                       height: `100%`,
                       width: `100%`,
-                      objectPosition: `right`,
+                      maxHeight: `50rem`,
+                      objectPosition: `right top`,
                     }}
                     fluid={data.mobile.childImageSharp.fluid}
                     loading="eager"
