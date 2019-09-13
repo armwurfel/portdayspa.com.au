@@ -36,37 +36,33 @@ const Hero = () => {
   `);
   return (
     <div className="overflow-hidden relative">
-      <div className="max-w-6xl ml-auto">
-        <Parallax className="hero-img" y={[-30, 30]}>
-          <Media query="(min-width: 768px)">
-            {matches =>
-              matches ? (
-                <Image
-                  className="inset-x-0 top-0"
-                  style={{
-                    minHeight: `30rem`,
-                    height: `100%`,
-                    postition: `absolute`,
-                  }}
-                  fluid={data.hero.childImageSharp.fluid}
-                  loading="eager"
-                />
-              ) : (
-                <Image
-                  className="opacity-75"
-                  style={{
-                    minHeight: `30rem`,
-                    height: `100%`,
-                    width: `100%`,
-                  }}
-                  fluid={data.mobile.childImageSharp.fluid}
-                  loading="eager"
-                />
-              )
-            }
-          </Media>
-        </Parallax>
-      </div>
+      <Parallax className="hero-img" y={[-30, 30]}>
+        <Media query="(min-width: 768px)">
+          {matches =>
+            matches ? (
+              <Image
+                style={{
+                  minHeight: `30rem`,
+                  height: `100%`,
+                }}
+                fluid={data.hero.childImageSharp.fluid}
+                loading="eager"
+              />
+            ) : (
+              <Image
+                className="opacity-75"
+                style={{
+                  minHeight: `30rem`,
+                  height: `100%`,
+                  width: `100%`,
+                }}
+                fluid={data.mobile.childImageSharp.fluid}
+                loading="eager"
+              />
+            )
+          }
+        </Media>
+      </Parallax>
       <div className="absolute flex flex-col font-sans inset-0 px-16 py-8 text-gray-700">
         <div className="flex flex-1 flex-col items-center justify-center max-w-xl mx-auto text-center w-full">
           <h1 className="w-full">
