@@ -65,6 +65,12 @@ const Navbar = () => {
   );
 };
 
+Navbar.propTypes = {
+  home: PropTypes.bool,
+};
+
+export default Navbar;
+
 const NavLink = ({ link, title }) => (
   <Link
     to={link}
@@ -78,5 +84,3 @@ NavLink.propTypes = {
   link: PropTypes.string,
   title: PropTypes.string,
 };
-
-export default Navbar;

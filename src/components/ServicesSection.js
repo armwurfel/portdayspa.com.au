@@ -18,18 +18,18 @@ const ServicesSection = () => {
   return (
     <>
       <div className="overflow-hidden">
-          <Parallax className="custom-class" y={[-50, 50]} >
-            <Image
-              style={{
-                minHeight: `30rem`,
-                height: `100%`,
-                maxHeight: `50rem`,
-                width: `100%`,
-              }}
-              fluid={data.file.childImageSharp.fluid}
-              loading="eager"
-            />
-          </Parallax>
+        <Parallax y={[-30, 30]}>
+          <Image
+            style={{
+              minHeight: `30rem`,
+              height: `100%`,
+              maxHeight: `50rem`,
+              width: `100%`,
+            }}
+            fluid={data.file.childImageSharp.fluid}
+            loading="eager"
+          />
+        </Parallax>
       </div>
       <article
         id="services"

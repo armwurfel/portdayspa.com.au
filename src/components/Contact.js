@@ -1,20 +1,19 @@
 import React from 'react';
-import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
+import { Parallax } from 'react-scroll-parallax';
 
 import FacebookIcon from './icons/Facebook';
 import InstagramIcon from './icons/Instagram';
 import InstagramWidget from './Instagram';
 import ContactImg from './ContactImg';
 import Form from './Form';
-import { Parallax } from 'react-scroll-parallax';
 
 const Contact = ({ data }) => {
   return (
     <div className="overflow-hidden relative z-10">
-        <Parallax className="custom-classa" y={[-30, 30]} >
-          <ContactImg fluid={data.hero.childImageSharp.fluid} />
-        </Parallax>
+      <Parallax className="contact-page-img" y={[-30, 30]}>
+        <ContactImg fluid={data.hero.childImageSharp.fluid} />
+      </Parallax>
       <article id="contact" className="bg-white px-4 py-24 relative w-full">
         <div className="flex flex-wrap max-w-6xl mx-auto">
           <div className="flex flex-1 flex-col px-4 w-full md:w-1/2">

@@ -29,14 +29,14 @@ const GiftVoucher = () => {
   `);
   return (
     <div className="overflow-hidden">
-        <Parallax className="custom-class" y={[-50, 50]} >
-          <Image
-            className="w-full"
-            style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
-            fluid={data.hero.childImageSharp.fluid}
-            loading="eager"
-          />
-          </Parallax>
+      <Parallax y={[-30, 30]}>
+        <Image
+          className="w-full"
+          style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
+          fluid={data.hero.childImageSharp.fluid}
+          loading="eager"
+        />
+      </Parallax>
       <article
         id="gift-voucher"
         className="bg-white px-4 md:px-6 py-24 relative w-full z-10"
@@ -71,14 +71,12 @@ const GiftVoucher = () => {
             </div>
           </div>
           <div className="mt-8 md:mt-0 md:pl-12 w-full md:w-2/3">
-              <Parallax className="custom-class" y={[-10, 10]} >
-                <Image
-                  className="w-full"
-                  style={{ transform: `rotate(-10deg)` }}
-                  fluid={data.voucher.childImageSharp.fluid}
-                  loading="eager"
-                />
-              </Parallax>
+            <Image
+              className="w-full"
+              style={{ transform: `rotate(-10deg)` }}
+              fluid={data.voucher.childImageSharp.fluid}
+              loading="eager"
+            />
           </div>
         </div>
       </article>

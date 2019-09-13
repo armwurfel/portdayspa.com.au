@@ -2,7 +2,7 @@ import React from 'react';
 import Media from 'react-media';
 import { graphql, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 import Logo from './Logo';
 
 const Hero = () => {
