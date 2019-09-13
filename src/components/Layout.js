@@ -6,9 +6,9 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import SocialWidgetDesktop from './SocialWidgetDesktop';
 
-const Layout = ({ children, home }) => (
+const Layout = ({ children }) => (
   <div className="antialiased flex flex-col font-sans leading-relaxed min-h-screen text-gray-700">
-    <Navbar home={home} />
+    <Navbar />
     <main className="bg-white flex flex-1 flex-col mx-auto relative w-full">
       {children}
     </main>
@@ -21,7 +21,6 @@ const Layout = ({ children, home }) => (
 
 Layout.propTypes = {
   children: PropTypes.node,
-  home: PropTypes.bool,
 };
 
 export default Layout;

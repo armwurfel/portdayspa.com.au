@@ -4,15 +4,11 @@ import PropTypes from 'prop-types';
 
 import Logo from './Logo';
 
-const Navbar = ({ home }) => {
+const Navbar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header
-      className={`${
-        home ? `-mt-8 ` : ``
-      }bg-white leading-none lg:px-10 relative sticky top-0 w-full z-40`}
-    >
+    <header className="bg-white leading-none lg:px-10 relative sticky top-0 w-full z-40">
       <div className="lg:flex items-center max-w-6xl mx-auto py-4 w-full">
         <div className="flex items-center justify-between w-full">
           <Link to="/" className="flex items-center p-4">

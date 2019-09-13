@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Day Spa | Massage | Beauty" />
       <HeroNav />
       <Hero />
-      <Layout home>
+      <Layout>
         <Why />
         <ServicesSection />
         <GiftVoucher />
