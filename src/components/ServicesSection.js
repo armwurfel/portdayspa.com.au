@@ -18,7 +18,7 @@ const ServicesSection = () => {
   return (
     <>
       <div className="overflow-hidden">
-        <Parallax y={[-50, 50]}>
+        <Parallax y={[-30, 30]}>
           <Image
             style={{
               minHeight: `30rem`,
