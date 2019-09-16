@@ -3,3 +3,9 @@
 p + p {
   @apply mt-4;
 }
+
+.parallax picture img{
+    top: 0 !important;
+    left: 50% !important;
+    transform: translate(-50%,0);
+}

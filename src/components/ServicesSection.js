@@ -14,10 +14,12 @@ const ServicesSection = () => {
       }
     }
   `);
+
   return (
     <>
       <div className="overflow-hidden">
         <Image
+          className="parallax"
           style={{
             minHeight: `30rem`,
             height: `100%`,
