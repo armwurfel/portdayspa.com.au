@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
-import { Parallax } from 'react-scroll-parallax';
+// import { Parallax } from 'react-scroll-parallax';
 
 const ServicesSection = () => {
   const data = useStaticQuery(graphql`
@@ -18,18 +18,18 @@ const ServicesSection = () => {
   return (
     <>
       <div className="overflow-hidden">
-        <Parallax y={[-30, 30]}>
-          <Image
-            style={{
-              minHeight: `30rem`,
-              height: `100%`,
-              maxHeight: `50rem`,
-              width: `100%`,
-            }}
-            fluid={data.file.childImageSharp.fluid}
-            loading="eager"
-          />
-        </Parallax>
+        {/* <Parallax y={[-30, 30]}> */}
+        <Image
+          style={{
+            minHeight: `30rem`,
+            height: `100%`,
+            maxHeight: `50rem`,
+            width: `100%`,
+          }}
+          fluid={data.file.childImageSharp.fluid}
+          loading="eager"
+        />
+        {/* </Parallax> */}
       </div>
       <article
         id="services"

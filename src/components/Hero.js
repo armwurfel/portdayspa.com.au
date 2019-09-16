@@ -2,7 +2,7 @@ import React from 'react';
 import Media from 'react-media';
 import { graphql, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
-import { Parallax } from 'react-scroll-parallax';
+// import { Parallax } from 'react-scroll-parallax';
 import Logo from './Logo';
 
 const Hero = () => {
@@ -36,33 +36,33 @@ const Hero = () => {
   `);
   return (
     <div className="overflow-hidden relative">
-      <Parallax className="hero-img" y={[-30, 30]}>
-        <Media query="(min-width: 768px)">
-          {matches =>
-            matches ? (
-              <Image
-                style={{
-                  minHeight: `30rem`,
-                  height: `100%`,
-                }}
-                fluid={data.hero.childImageSharp.fluid}
-                loading="eager"
-              />
-            ) : (
-              <Image
-                className="opacity-75"
-                style={{
-                  minHeight: `30rem`,
-                  height: `100%`,
-                  width: `100%`,
-                }}
-                fluid={data.mobile.childImageSharp.fluid}
-                loading="eager"
-              />
-            )
-          }
-        </Media>
-      </Parallax>
+      {/* <Parallax className="hero-img" y={[-30, 30]}> */}
+      <Media query="(min-width: 768px)">
+        {matches =>
+          matches ? (
+            <Image
+              style={{
+                minHeight: `30rem`,
+                height: `100%`,
+              }}
+              fluid={data.hero.childImageSharp.fluid}
+              loading="eager"
+            />
+          ) : (
+            <Image
+              className="opacity-75"
+              style={{
+                minHeight: `30rem`,
+                height: `100%`,
+                width: `100%`,
+              }}
+              fluid={data.mobile.childImageSharp.fluid}
+              loading="eager"
+            />
+          )
+        }
+      </Media>
+      {/* </Parallax> */}
       <div className="absolute flex flex-col font-sans inset-0 px-16 py-8 text-gray-700">
         <div className="flex flex-1 flex-col items-center justify-center max-w-xl mx-auto text-center w-full">
           <h1 className="w-full">
