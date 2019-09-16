@@ -29,10 +29,34 @@ export default function HTML(props) {
               console.log("Parallax enter");
 
                 window.addEventListener('scroll', function(e){
+
                   var scrolled = window.pageYOffset;
-                  var background = document.querySelector(".parallax picture img");
-                  var coords = '0% '+ (- (scrolled *0.3) + 'px');
-                  background.style.backgroundPosition  = coords;
+                  var img = document.querySelector(".parallax picture img");
+                  var imgParent = img.parentElement;
+
+                  var speed = 0.25;
+                  var imgY = imgParent.offsetTop;
+                  var winY = scrolled;
+                  var winH = img.height;
+                  var parentH = imgParent.innerHeight;
+
+
+                  // The next pixel to show on screen      
+                  var winBottom = winY + winH;
+                  var imgPercent = 0;
+                  // If block is shown on screen
+                  if (winBottom > imgY && winY < imgY + parentH) {
+                    // Number of pixels shown after block appear
+                    var imgBottom = ((winBottom - imgY) * speed);
+                    // Max number of pixels until block disappear
+                    var imgTop = winH + parentH;
+                    // Porcentage between start showing until disappearing
+                    var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
+                  }
+
+
+                  var coords = 'translate(-50%, -' + imgPercent + '%)';
+                  img.style.transform  = coords;
                 });
 
               console.log("Parallax exit " + images);
