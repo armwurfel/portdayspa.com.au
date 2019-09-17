@@ -53,10 +53,7 @@ const Hero = () => {
               <Image
                 fluid={data.mobile.childImageSharp.fluid}
                 loading="eager"
-                className="hero-img-mobile opacity-75"
-                imgStyle={{
-                  objectPosition: `center`,
-                }}
+                className="hero-img-mobile -ml-20 opacity-75"
                 style={{
                   minHeight: `30rem`,
                 }}
