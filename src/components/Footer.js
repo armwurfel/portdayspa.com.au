@@ -32,10 +32,12 @@ const Footer = () => {
   return (
     <footer className="mb-12 md:mb-0 relative w-full">
       <div className="absolute inset-0 overflow-hidden">
-        <Image
-          className="h-full opacity-75"
-          fluid={data.file.childImageSharp.fluid}
-        />
+        <div data-jarallax data-speed="0.2" className="jarallax">
+          <Image
+            className="h-full opacity-75 jarallax-img"
+            fluid={data.file.childImageSharp.fluid}
+          />
+        </div>
       </div>
       <div className="mx-auto relative">
         <div className="flex flex-wrap justify-center items-center max-w-6xl mx-auto px-4 py-12 w-full">

@@ -2,6 +2,7 @@ import React from 'react';
 import Media from 'react-media';
 import { graphql, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
+import Parallax from './Parallax';
 
 import Logo from './Logo';
 
@@ -40,26 +41,31 @@ const Hero = () => {
         <Media query="(min-width: 768px)">
           {matches =>
             matches ? (
-              <Image
-                style={{
-                  minHeight: `30rem`,
-                  height: `100%`,
-                }}
-                fluid={data.hero.childImageSharp.fluid}
-                loading="eager"
-              />
+              <Parallax>
+                <Image
+                  className="jarallax-img"
+                  style={{
+                    minHeight: `30rem`,
+                    height: `100%`,
+                  }}
+                  fluid={data.hero.childImageSharp.fluid}
+                  loading="eager"
+                />
+              </Parallax>
             ) : (
-              <Image
-                className="opacity-75"
-                style={{
-                  minHeight: `30rem`,
-                  height: `100%`,
-                  width: `100%`,
-                  objectPosition: `right`,
-                }}
-                fluid={data.mobile.childImageSharp.fluid}
-                loading="eager"
-              />
+               <Parallax>
+                  <Image
+                    className="opacity-75 jarallax-img"
+                    style={{
+                      minHeight: `30rem`,
+                      height: `100%`,
+                      width: `100%`,
+                      objectPosition: `right`,
+                    }}
+                    fluid={data.mobile.childImageSharp.fluid}
+                    loading="eager"
+                  />
+              </Parallax>
             )
           }
         </Media>

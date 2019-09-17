@@ -24,45 +24,18 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <script  dangerouslySetInnerHTML={{
-          __html: `            
-              console.log("Parallax enter");
 
-                window.addEventListener('scroll', function(e){
-
-                  var scrolled = window.pageYOffset;
-                  var img = document.querySelector(".parallax picture img");
-                  var imgParent = img.parentElement;
-
-                  var speed = 0.25;
-                  var imgY = imgParent.offsetTop;
-                  var winY = scrolled;
-                  var winH = img.height;
-                  var parentH = imgParent.innerHeight;
-
-
-                  // The next pixel to show on screen      
-                  var winBottom = winY + winH;
-                  var imgPercent = 0;
-                  // If block is shown on screen
-                  if (winBottom > imgY && winY < imgY + parentH) {
-                    // Number of pixels shown after block appear
-                    var imgBottom = ((winBottom - imgY) * speed);
-                    // Max number of pixels until block disappear
-                    var imgTop = winH + parentH;
-                    // Porcentage between start showing until disappearing
-                    var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
-                  }
-
-
-                  var coords = 'translate(-50%, -' + imgPercent + '%)';
-                  img.style.transform  = coords;
+          <script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
+          <script  dangerouslySetInnerHTML={{
+          __html: ` 
+           console.log("Parallax enter");
+                jarallax(document.querySelectorAll('.jarallax'), {
+                    speed: 0.2
                 });
+              `
+            }}
+          />
 
-              console.log("Parallax exit " + images);
-            `        
-          }}
-        />
       </body>
     </html>
   )
