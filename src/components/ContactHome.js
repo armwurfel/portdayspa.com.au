@@ -1,21 +1,19 @@
 import React from 'react';
+import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
-// import { Parallax } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 
 import FacebookIcon from './icons/Facebook';
 import InstagramIcon from './icons/Instagram';
 import InstagramWidget from './Instagram';
-import ContactImg from './ContactImg';
 import Form from './Form';
-import Parallax from './Parallax';
 
-
-const Contact = ({ data }) => {
+const ContactHome = ({ data }) => {
   return (
     <div className="overflow-hidden relative z-10">
-      <Parallax>
+      <Parallax y={[-30, 30]}>
         <Image
-          className="w-full jarallax-img"
+          className="w-full"
           style={{ minHeight: `30rem`, height: `100%`, maxHeight: `50rem` }}
           fluid={data.hero.childImageSharp.fluid}
           loading="eager"
@@ -87,8 +85,8 @@ const Contact = ({ data }) => {
   );
 };
 
-Contact.propTypes = {
+ContactHome.propTypes = {
   data: PropTypes.object,
 };
 
-export default Contact;
+export default ContactHome;

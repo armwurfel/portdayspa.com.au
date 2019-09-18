@@ -43,16 +43,23 @@ const Why = () => {
             meeting you or welcoming you back again soon.
           </p>
           <p>
+            <Link to="/why" className="font-bold underline">
+              Read more...
+            </Link>
+          </p>
+          <p>
             <Afterpay className="mx-auto w-1/2" />
           </p>
         </div>
         <div className="mt-8 mx-auto w-full md:w-1/3">
-          <Link
-            to="/why"
+          <a
+            href="https://phorest.com/book/salons/portmacquariedayspa"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-gray-500 inline-block leading-none px-2 py-1 uppercase transition-all hover:bg-gray-800 hover:text-white hover:border-gray-800"
           >
-            Read more
-          </Link>
+            Book now
+          </a>
         </div>
       </div>
     </article>

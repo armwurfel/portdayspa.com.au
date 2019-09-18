@@ -9,7 +9,7 @@ import Hero from '../components/Hero';
 import Why from '../components/Why';
 import ServicesSection from '../components/ServicesSection';
 import GiftVoucher from '../components/GiftVoucher';
-import Contact from '../components/Contact';
+import ContactHome from '../components/ContactHome';
 import Map from '../components/Map';
 
 const IndexPage = ({ data }) => {
@@ -18,11 +18,11 @@ const IndexPage = ({ data }) => {
       <SEO title="Day Spa | Massage | Beauty" />
       <HeroNav />
       <Hero />
-      <Layout>
+      <Layout home>
         <Why />
         <ServicesSection />
         <GiftVoucher />
-        <Contact data={data} />
+        <ContactHome data={data} />
         <Map />
       </Layout>
     </>

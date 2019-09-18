@@ -1,25 +1,24 @@
 import React from 'react';
-import Media from 'react-media';
 import { graphql, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
-import Parallax from './Parallax';
 
+import Parallax from './Parallax';
 import Logo from './Logo';
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query HeroQuery {
-      hero: file(relativePath: { eq: "hero.jpg" }) {
+      mobileImage: file(relativePath: { eq: "hero-mobile.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 3000, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
+          fluid(maxWidth: 1000, quality: 100) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
-      mobile: file(relativePath: { eq: "hero-mobile.jpg" }) {
+      desktopImage: file(relativePath: { eq: "hero.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 3000, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
+          fluid(maxWidth: 1920, quality: 100) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -35,43 +34,30 @@ const Hero = () => {
       }
     }
   `);
+  const sources = [
+    data.mobileImage.childImageSharp.fluid,
+    {
+      ...data.desktopImage.childImageSharp.fluid,
+      media: `(min-width: 640px)`,
+    },
+  ];
   return (
     <div className="overflow-hidden relative">
       <div className="max-w-6xl ml-auto">
-        <Media query="(min-width: 768px)">
-          {matches =>
-            matches ? (
-              <Parallax>
-                <Image
-                  className="jarallax-img"
-                  style={{
-                    minHeight: `30rem`,
-                    height: `100%`,
-                  }}
-                  fluid={data.hero.childImageSharp.fluid}
-                  loading="eager"
-                />
-              </Parallax>
-            ) : (
-               <Parallax>
-                  <Image
-                    className="opacity-75 jarallax-img"
-                    style={{
-                      minHeight: `30rem`,
-                      height: `100%`,
-                      width: `100%`,
-                      objectPosition: `right`,
-                    }}
-                    fluid={data.mobile.childImageSharp.fluid}
-                    loading="eager"
-                  />
-              </Parallax>
-            )
-          }
-        </Media>
+        <Parallax>
+          <Image
+            className="jarallax-img"
+            style={{
+              minHeight: `30rem`,
+              height: `100%`,
+            }}
+            fluid={sources}
+            loading="eager"
+          />
+        </Parallax>
       </div>
       <div className="absolute flex flex-col font-sans inset-0 px-16 py-8 text-gray-700">
-        <div className="flex flex-1 flex-col items-center justify-center max-w-xl mx-auto text-center w-full">
+        <div className="flex flex-1 flex-col items-center justify-center max-w-xl mx-auto text-center w-full sm:mt-20">
           <h1 className="w-full">
             <Logo className="fill-current w-full" />
           </h1>

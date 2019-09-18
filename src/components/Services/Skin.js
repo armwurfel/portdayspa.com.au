@@ -170,7 +170,7 @@ const Skin = () => {
             luminous complexion.
           </p>
         </Service>
-        <Service title="Skin Needling (Face)" price="$359">
+        <Service title="Skin Needling (Face)" price="$259">
           <p>
             Utilises Direct Needle Therapy (DNT) to rejuvenate the skin’s
             youthful appearance. This powerful treatment works to quickly

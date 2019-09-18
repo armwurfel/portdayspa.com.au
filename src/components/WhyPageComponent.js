@@ -24,8 +24,8 @@ const WhyPageComponent = () => {
           <p className="mt-4 md:mt-0">
             <strong>Gift Cards</strong> Give the most memorable gift of all…
             Allow us to wrap up tranquility and provide your loved one with a
-            beautifully presented gift voucher. Best Spa gift cards and Spa
-            Finder gift cards available.
+            beautifully presented gift voucher. We accept BEST Spas &amp; Beauty
+            Gift Cards and SPAFINDER Gift Cards.
           </p>
           <p>
             <strong>Clean</strong> Your treatment room will always be

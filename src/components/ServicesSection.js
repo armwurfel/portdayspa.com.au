@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
+
 import Parallax from './Parallax';
 
 const ServicesSection = () => {
@@ -31,7 +32,7 @@ const ServicesSection = () => {
             fluid={data.file.childImageSharp.fluid}
             loading="eager"
           />
-          </Parallax>
+        </Parallax>
       </div>
       <article
         id="services"

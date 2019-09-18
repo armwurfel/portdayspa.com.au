@@ -4,11 +4,15 @@ import PropTypes from 'prop-types';
 
 import Logo from './Logo';
 
-const Navbar = () => {
+const Navbar = ({ home }) => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-white leading-none lg:px-10 relative sticky top-0 w-full z-40">
+    <header
+      className={`${
+        home ? `sm:mt-16 ` : ``
+      }bg-white leading-none lg:px-10 relative sticky top-0 w-full z-40`}
+    >
       <div className="lg:flex items-center max-w-6xl mx-auto py-4 w-full">
         <div className="flex items-center justify-between w-full">
           <Link to="/" className="flex items-center p-4">
@@ -65,6 +69,12 @@ const Navbar = () => {
   );
 };
 
+Navbar.propTypes = {
+  home: PropTypes.bool,
+};
+
+export default Navbar;
+
 const NavLink = ({ link, title }) => (
   <Link
     to={link}
@@ -78,5 +88,3 @@ NavLink.propTypes = {
   link: PropTypes.string,
   title: PropTypes.string,
 };
-
-export default Navbar;
