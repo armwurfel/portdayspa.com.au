@@ -46,7 +46,7 @@ const Hero = () => {
         <Image
           fluid={sources}
           loading="eager"
-          className="hero-img opacity-75 sm:opacity-100"
+          className="hero-img opacity-75 -ml-32 sm:ml-0 sm:opacity-100"
           style={{
             minHeight: `30rem`,
             height: `100%`,
