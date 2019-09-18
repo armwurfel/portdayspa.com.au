@@ -5,20 +5,27 @@ p + p {
 }
 
 /* Hero Image Top space fix */
-.hero-img-mobile {
-  margin-top: -15% !important;
+.hero-img {
+  margin-top: -17%;
 }
 
-.hero-img-desktop {
-  margin-top: -11% !important;
+@screen sm {
+  .hero-img {
+    margin-top: -13%;
+  }
+}
+@screen md {
+  .hero-img {
+    margin-top: -10%;
+  }
 }
 @screen lg {
-  .hero-img-desktop {
-    margin-top: -8% !important;
+  .hero-img {
+    margin-top: -8%;
   }
 }
 @screen xl {
-  .hero-img-desktop {
-    margin-top: -7% !important;
+  .hero-img {
+    margin-top: -6%;
   }
 }
